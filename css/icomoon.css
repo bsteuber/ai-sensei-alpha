@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?hod9zg');
+  src:  url('fonts/icomoon.eot?hod9zg#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?hod9zg') format('truetype'),
+    url('fonts/icomoon.woff?hod9zg') format('woff'),
+    url('fonts/icomoon.svg?hod9zg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-autoplay:before {
+  content: "\e900";
+}
+.icon-back_to_game:before {
+  content: "\e901";
+}
+.icon-back_to_game_alternate:before {
+  content: "\e902";
+}
+.icon-black_plus_white:before {
+  content: "\e903";
+}
+.icon-black_white:before {
+  content: "\e904";
+}
+.icon-credits:before {
+  content: "\e905";
+}
+.icon-download:before {
+  content: "\e906";
+}
+.icon-edit:before {
+  content: "\e907";
+}
+.icon-full_screen:before {
+  content: "\e908";
+}
+.icon-log_in:before {
+  content: "\e909";
+}
+.icon-logo:before {
+  content: "\e90a";
+}
+.icon-log_out:before {
+  content: "\e90b";
+}
+.icon-next_mistake:before {
+  content: "\e90c";
+}
+.icon-next_move:before {
+  content: "\e90d";
+}
+.icon-next_move_open:before {
+  content: "\e90e";
+}
+.icon-one_credit:before {
+  content: "\e90f";
+}
+.icon-page_back:before {
+  content: "\e910";
+}
+.icon-pause:before {
+  content: "\e911";
+}
+.icon-previous_mistake:before {
+  content: "\e912";
+}
+.icon-previous_move:before {
+  content: "\e913";
+}
+.icon-previous_move_open:before {
+  content: "\e914";
+}
+.icon-reviews:before {
+  content: "\e915";
+}
+.icon-rewind_to_start:before {
+  content: "\e916";
+}
+.icon-rezise_screen:before {
+  content: "\e917";
+}
+.icon-star_full:before {
+  content: "\e918";
+}
+.icon-star_open:before {
+  content: "\e919";
+}
+.icon-start_over:before {
+  content: "\e91a";
+}
+.icon-to_end_of_game:before {
+  content: "\e91b";
+}
+.icon-tray:before {
+  content: "\e91c";
+}
+.icon-trial_board:before {
+  content: "\e91e";
+}
+.icon-upload:before {
+  content: "\e91f";
+}
+.icon-white_black:before {
+  content: "\e920";
+}
