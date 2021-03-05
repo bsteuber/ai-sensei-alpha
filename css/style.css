@@ -1325,23 +1325,40 @@ input:focus + .slider {
 
 /* Board svg */
 
-circle.stone-circle {
-  stroke-width: 1;
+circle.stone-circle.none {
+  stroke-width: 0.1;
   stroke: black;
-
 }
 
-circle.stone-circle.black {
+circle.stone-circle.ghost {
+  stroke-width: 0.1;
+  stroke: black;
+}
+
+
+circle.stone-circle.stone {
+  stroke-width: 1;
+  stroke: black;
+}
+
+circle.stone-circle.none {
+  fill: none;
+}
+
+circle.stone-circle.black.ghost {
+  fill: #00000070;
+}
+
+circle.stone-circle.white.ghost {
+  fill: #ffffff60;
+}
+
+circle.stone-circle.black.stone {
   fill: black;
 }
 
-circle.stone-circle.white {
+circle.stone-circle.white.stone {
   fill: white;
-}
-
-circle.stone-circle.highlight {
-  stroke-width: 2;
-  stroke: #ff9e49;
 }
 
 circle.ownership.diff.pos { fill: #22dd33; }
