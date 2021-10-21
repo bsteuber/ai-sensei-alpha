@@ -228,7 +228,10 @@ body {
 
 #content-wrapper {
   max-height: 100vh;
-  overflow-y: auto;
+}
+
+#content-wrapper:not(.game-page) {
+  overflow-y: scroll;
 }
 
 #content {
@@ -534,11 +537,7 @@ hr.showcase-line {
 }
 
 .games-page hr {
-    border-top: 1px solid #ffffff30;
-}
-
-.games-tag-selector .badge {
-    font-size: 1.1rem;
+  border-top: 1px solid #ffffff30;
 }
 
 .search-box input {
@@ -672,10 +671,6 @@ a:hover, .btn-link:hover, .link:hover {
 
 .sgf-info .datepicker input {
   padding: 0em 0.5em;
-}
-
-.game-tags-editor {
-  width: 15rem;
 }
 
 .tags-icon {
@@ -1151,27 +1146,57 @@ a.game-link {
   visibility: hidden;
 }
 
-.tag-wrapper:hover .tag-hover-overlay {
-  visibility: visible;
-  z-index: 1;
+.tag-wrapper {
+  padding: 0.2rem;
+  margin: 0.05rem;
 }
 
-.tag-hover-overlay span {
-  visibility: hidden;
+.tag-wrapper.pointer:hover {
+  background-color: #00000060;
 }
 
-.game-link:hover .game-link-overlay {
-  background-color: #ffffff30;
+.tag-wrapper.active, .tag-wrapper.pointer.active:hover {
+  background-color: #000000a0;
 }
 
-#content .card.game-link-info {
-  height: 6rem;
-  background-color: #fff;
-  border-radius: 0 0 3px 3px;
+.games-page .tag-wrapper.pointer:hover  {
+  background-color: #ffffff60;
 }
 
-.game-link-info .badge {
+.games-page .tag-wrapper.active, .games-page .tag-wrapper.pointer.active:hover {
+  background-color: #ffffffa0;
+}
+
+.tag-wrapper .tag {
+  border: 0.1em solid #ffffff80;
+}
+
+.games-page .tag-wrapper .tag {
+  border: 0.1em solid #00000080;
+}
+
+.game-link-info-title {
+  max-width: calc(100% - 1.3rem);
+  flex-grow: 1;
+  height: 1.6rem;
+}
+
+.game-link-info-tags {
+  height: 3rem;
+  overflow-y: auto;
+}
+
+.games-page .game-link-info,
+.games-page .game-list-menu-toggle {
+  color: #fff;
+}
+
+.tag.badge {
   font-size: 0.9rem;
+}
+
+.games-tag-selector .tag.badge {
+  font-size: 1rem;
 }
 
 .game-row-game {
@@ -1189,11 +1214,36 @@ a.game-link {
 }
 
 .player-name.pointer:hover {
-  background-color: #00000020;
+  background-color: #ffffff30;
 }
 
 .player-name.winner {
-  text-decoration: underline 0.2rem;
+  font-weight: bold;
+}
+
+.black-white-icon {
+  width: 1.8rem;
+  min-width: 1.8rem;
+  max-width: 1.8rem;
+  height: 1.2rem;
+  margin: 0 0.2rem;
+  background-image: url("/img/icons/black_white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow:hidden;
+}
+
+.font-large .black-white-icon {
+  width: 2.2rem;
+  min-width: 2.2rem;
+  max-width: 2.2rem;
+  height: 1.5rem;
+}
+
+.games-page .black-white-icon {
+  background-image: url("/img/icons/black_white_inverse.svg");
+  color: white;
 }
 
 a.game-row-game:hover {
@@ -1248,14 +1298,15 @@ img.white-black {
 .game-list-menu-toggle {
   background: transparent;
   border: none;
-  color: var(--card-fg);
   font-size: 1.3rem;
-  margin-left: 0.4rem;
+  margin-left: auto;
   border-radius: 3px;
+  width: 1rem;
+  padding: 0.2rem;
 }
 
 .game-list-menu-toggle:hover {
-  background-color: #00000020;
+  background-color: #ffffff30;
 }
 
 .nav-control {
@@ -1315,13 +1366,13 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
   color: #398fdb;
 }
 
-.analysis-game-row {
-  margin: -1rem 0;
+.analysis-game-row, .trial-game-row {
+  margin: -1rem 0 -0.3rem;
 }
 
 .drop-menu {
   background-color: var(--nav-bg);
-  filter: drop-shadow(3px 1px 2px rgba(0,0,0,0.3));
+  filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.5));
 }
 
 .light-drop .drop-menu, .light-drop .drop-menu .btn.btn-primary.drop-item {
@@ -1588,6 +1639,11 @@ img.article-image {
   max-height: 80rem;
 }
 
+.article-game {
+  float: right;
+  clear: both;
+}
+
 .news-editor input.form-control {
   padding: 0.1rem 0.5rem 0.1rem 0.5rem;
 }
@@ -1613,14 +1669,6 @@ img.article-image {
 .dropdown-container {
   position: relative;
   display: inline-block;
-}
-
-.dropdown-content {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
 }
 
 #content .dropdown-content .card {
@@ -1657,6 +1705,10 @@ img.article-image {
   background-color: black;
   opacity: 0.6;
   z-index: 2;
+}
+
+.backdrop.invisible-backdrop {
+  background-color: #00000000;
 }
 
 .hide-modal modal{
