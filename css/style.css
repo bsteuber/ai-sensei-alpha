@@ -1175,13 +1175,17 @@ a.game-link {
   border: 0.1em solid #00000080;
 }
 
+.games-page .game-cell {
+  margin-bottom: 1.6rem;
+}
+
 .game-link-info-title {
   max-width: calc(100% - 1.3rem);
   flex-grow: 1;
-  height: 1.6rem;
 }
 
 .game-link-info-tags {
+  margin-top: -0.4rem;
   height: 3rem;
   overflow-y: auto;
 }
@@ -1219,31 +1223,6 @@ a.game-link {
 
 .player-name.winner {
   font-weight: bold;
-}
-
-.black-white-icon {
-  width: 1.8rem;
-  min-width: 1.8rem;
-  max-width: 1.8rem;
-  height: 1.2rem;
-  margin: 0 0.2rem;
-  background-image: url("/img/icons/black_white.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  overflow:hidden;
-}
-
-.font-large .black-white-icon {
-  width: 2.2rem;
-  min-width: 2.2rem;
-  max-width: 2.2rem;
-  height: 1.5rem;
-}
-
-.games-page .black-white-icon {
-  background-image: url("/img/icons/black_white_inverse.svg");
-  color: white;
 }
 
 a.game-row-game:hover {
@@ -1488,6 +1467,10 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
   min-height: 70vh;
 }
 
+.move-info-table tr.active {
+  background-color: #00000020;
+}
+
 .move-info-text {
   font-size: 1.1rem !important;
 }
@@ -1629,8 +1612,7 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
   clear: both;
 }
 
-.news-content hr,
-.news-editor hr {
+.clear-both {
   clear: both;
 }
 
@@ -1657,14 +1639,6 @@ img.article-image {
   padding: 0;
   height: 15rem;
 }
-
-.news-content p::after,
-.news-editor p::after {
-  display: table;
-  content: "";
-  clear: both;
-}
-
 
 .dropdown-container {
   position: relative;
