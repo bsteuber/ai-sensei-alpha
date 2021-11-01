@@ -351,6 +351,11 @@ body, #game.fullscreen {
   margin-top: 0;
 }
 
+.size-xs #content-wrapper, .size-sm #content-wrapper, .size-md #content-wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 a:focus {
   outline: none;
 }
