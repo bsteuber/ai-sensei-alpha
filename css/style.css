@@ -379,11 +379,30 @@ hr.showcase-line {
 }
 
 #landing-page {
-  margin-top: -1rem;
+  margin-top: -4rem;
+  padding-top: 4rem;
+  background-color: white;
+  color: black;
 }
 
-.landing-title {
+#content h1.landing-title {
   font-size: 3rem;
+  color: black !important;
+  font-weight: bold;
+}
+
+.landing-title-highlight {
+  color: #5f90ad;
+}
+
+#landing-page .btn-primary {
+  background-color: #5f90ad;
+  border: none;
+}
+
+.landing-title-check-icon {
+  color: #9ce3bd;
+  margin-right: 1rem;
 }
 
 .size-xs .landing-title {
@@ -395,20 +414,14 @@ hr.showcase-line {
 }
 
 .landing-title-img {
-  width:  100%;
-  aspect-ratio: 1349 / 796;
-}
-
-.size-lg .landing-title-img {
-  max-width: 105%;
-}
-
-.size-xl .landing-title-img {
-  max-width: 120%;
+  margin: 2rem 0;
+  width:  500px;
+  max-width: 100%;
+  aspect-ratio: 1063 / 589;
 }
 
 .landing-title-text {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
 }
 
 .size-xs .landing-title-text {
@@ -416,41 +429,41 @@ hr.showcase-line {
 }
 
 .landing-feature {
-  background-color: var(--card-bg);
-  color: var(--card-fg) !important;
+  padding: 3rem 7rem;
 }
+
+.size-xs .landing-feature {
+  padding: 1rem 1rem;
+}
+
 
 #content .landing-feature h1, #content .landing-feature h2 {
   color: var(--card-fg) !important;
 }
 
 .landing-feature.dark {
-  background-color: transparent !important;
-  color: white !important;
+  background-color: #eaeef3 !important;
+  color: black !important;
 }
 
-.feature-card a {
-  color: white !important;
+#features-wrapper {
+  max-width: 52rem;
+}
+
+.size-xs #features-wrapper {
+  max-width: 16rem;
+}
+
+#landing-page a.card.feature {
+  background-color: white !important;
+  color: black !important;
+  max-width: 16rem;
   text-decoration: none !important;
   font-weight: normal;
 }
 
-.landing-feature.dark, .landing-feature.dark h1, .landing-feature.dark h2,
-.landing-feature.dark h3, .landing-feature.dark h4, .landing-feature.dark h5
-{
-  color: white !important;
-}
-
-.feature-card .link {
-  color: #5d8ff7 !important;
-}
-
-.feature-card .link:hover {
-  color: #4e76c8 !important;
-}
-
-.feature-card .feature:hover {
-  color: #9a9a9a !important;
+#landing-page a.card.feature:hover {
+  background-color: #00000020 !important;
 }
 
 .feature-card h4.landing-feature-title {
@@ -463,6 +476,16 @@ hr.showcase-line {
 
 .landing-feature img {
   vertical-align: middle;
+}
+
+.landing-quote-wrapper {
+  max-width: 30rem;
+}
+
+#landing-page .quote-info {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 #content h1,
@@ -1185,7 +1208,7 @@ a.game-link {
   border: 0.1em solid #00000080;
 }
 
-.games-page .game-cell {
+.games-page .game-cell, .home-page .game-cell {
   margin-bottom: 1.6rem;
 }
 
