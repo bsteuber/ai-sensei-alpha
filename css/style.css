@@ -101,6 +101,10 @@
   --inaccuracy: #d2bc07;
   --mistake:#e6922b;
   --blunder: #cb3330;
+  --mistake-on-black: #e6922b;
+  --mistake-on-white: #ae6306;
+  --blunder-on-black: #ff4f4d;
+  --blunder-on-white: #aa1c19;
   --board-tooltip: #ffffffd0;
 }
 
@@ -2187,26 +2191,6 @@ circle.ownership.diff.white { stroke: white; }
 .white-stone .board-label {
   fill: #000;
   stroke: #000;
-}
-
-.black-stone .board-label.mistake {
-  fill: var(--mistake-on-black);
-  stroke: var(--mistake-on-black);
-}
-
-.white-stone .board-label.mistake {
-  fill: var(--mistake-on-white);
-  stroke: var(--mistake-on-white);
-}
-
-.black-stone .board-label.blunder {
-  fill: var(--blunder-on-black);
-  stroke: var(--blunder-on-black);
-}
-
-.white-stone .board-label.blunder {
-  fill: var(--blunder-on-white);
-  stroke: var(--blunder-on-white);
 }
 
 .move-category {
