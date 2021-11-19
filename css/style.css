@@ -316,7 +316,7 @@ body, #game.fullscreen {
   font-family: prompt, sans-serif;
 }
 
-#content-wrapper:not(.game-page) {
+#content-wrapper:not(.game-page):not(.training-page) {
   overflow-y: scroll;
 }
 
@@ -328,7 +328,7 @@ body, #game.fullscreen {
   padding-top: 4.8rem;
 }
 
-.fullscreen #content, .game-page #content {
+.fullscreen #content, .game-page #content, .training-page #content {
   padding-top: 0;
 }
 
