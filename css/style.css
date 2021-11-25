@@ -530,12 +530,10 @@ h2.landing-feature-title {
   border-radius: 5px;
   width: 40px;
   height: 40px;
-  z-index: 0;
 }
 
 .landing-icon {
   position: relative;
-  z-index: 10;
   width: 60px;
   height: 60px;
 }
@@ -613,6 +611,11 @@ h2.landing-feature-title {
 
 .landing-feature {
   padding: 2rem 1rem;
+}
+
+#static-landing-page:not(.rendered) .btn-signup,
+#static-landing-page:not(.rendered) .cookie-settings-button {
+  visibility: hidden;
 }
 
 /* xs */
@@ -1226,6 +1229,21 @@ input.form-control-file {
   font-size: 0.6rem;
 }
 
+.notification-highlight {
+  color: white;
+  position: absolute;
+  left: -0.1em;
+  top: -1.8em;
+  padding: 0 0.25em;
+  background-color: red;
+  border-radius: 1em;
+  font-size: 0.7rem;
+  min-width: 1.15em;
+  font-weight: bold;
+  line-height: 1.2;
+
+}
+
 .main-nav h1 {
   white-space: nowrap;
   margin-top: 0.2rem;
@@ -1297,8 +1315,8 @@ input.form-control-file {
   width: 2rem;
 }
 
-#content .card.discuss {
-  background-color: #cad5ea;
+#content .card.discuss, #content .card.post-card {
+  background-color: var(--card-bg);
 }
 
 .card.discuss .card-body {
@@ -1371,9 +1389,19 @@ a.game-link {
 }
 
 .game-cell {
-  border-radius: 4px;
-  border: 1px solid #DDE3DF; /* TODO Dark mode */
   margin-bottom: 1.6rem;
+  border: 1px solid #DDE3DF;
+}
+
+.discuss-page .game-cell, .news-page .game-cell {
+  border: none;
+  background-color: var(--page-bg);
+  margin-bottom: 0.3rem;
+  padding-bottom: 0.1rem;
+}
+
+.discuss-page .game-link-info {
+
 }
 
 .games-page .games-header {
@@ -1410,8 +1438,13 @@ a.game-link {
   font-size: 0.9rem;
 }
 
-.games-tag-selector .tag.badge {
+.games-tag-selector .tag.badge, .discuss-page-selector .tag.badge {
   font-size: 1rem;
+}
+
+.badge-selector {
+  border: 1px solid black;
+  background-color: white;
 }
 
 .game-row-game {
@@ -2070,6 +2103,10 @@ rect.white-errors {
   padding: 0 0.3rem;
   filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
   transition: margin-left 0.04s;
+}
+
+.new-slider .knob:focus-visible {
+  outline: solid 0.25em #81beffd0;
 }
 
 .switch {
