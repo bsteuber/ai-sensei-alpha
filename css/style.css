@@ -1405,8 +1405,9 @@ a.game-link {
   padding-bottom: 0.1rem;
 }
 
-.discuss-page .game-link-info {
-
+.news-page .game-cell {
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .games-page .games-header {
