@@ -136,6 +136,7 @@
   --tab-hover: #3b519a;
   --tab-active: var(--card-bg);
   --game-title: #e3c25c;
+  --page-hover-bg: #ffffff20;
   --tag-hover-bg: #ffffff60;
   --tag-active-bg: #ffffffa0;
   --tag-border: #ffffff80;
@@ -172,6 +173,7 @@
   --card-element-bg: #20274d4f;
   --card-element-border:#00000020;
   --game-title: #806511;
+  --page-hover-bg: #00000020;
   --tag-hover-bg: #00000060;
   --tag-active-bg: #000000a0;
   --tag-border: #00000080;
@@ -1333,10 +1335,6 @@ input.form-control-file {
   padding: 0 0.8rem 0 0;
 }
 
-.discuss {
-  font-size: 1rem;
-}
-
 .discuss .game-row {
   background-color: rgba(255,255,255, 0.2);
   padding: 0.2em;
@@ -1440,6 +1438,7 @@ a.game-link {
   color: var(--card-fg) !important;
 }
 
+
 .tag.badge {
   font-size: 0.9rem;
 }
@@ -1469,7 +1468,7 @@ a.game-link {
 }
 
 .player-name.pointer:hover {
-  background-color: #ffffff30;
+  background-color: var(--page-hover-bg);
 }
 
 .player-name.winner, .player-rank.winner {
@@ -1533,14 +1532,13 @@ img.white-black {
   border: none;
   font-size: 1.3rem;
   margin-left: auto;
-  margin-right: 0.8rem;
   border-radius: 3px;
-  width: 1rem;
+  width: 2rem;
   padding: 0.2rem;
 }
 
 .game-list-menu-toggle:hover {
-  background-color: #ffffff30;
+  background-color: var(--page-hover-bg);
 }
 
 .nav-control {
@@ -1847,7 +1845,8 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
 
 .news-list h5 a, .single-news-item h5 a {
   color: var(--card-fg);
-  font-size: 1.4em;
+  font-size: 1.3em;
+  font-weight: 500;
 }
 
 .news-list .card-body, .single-news-item .card-body {
@@ -1885,6 +1884,41 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
 
 .news-read-more-button-wrapper button.btn {
   font-size: 1.2rem;
+}
+
+.discuss-faded .discuss-inner-content {
+  position: relative;
+  height: 22rem;
+  overflow: hidden;
+}
+
+.discuss-unfaded .discuss-read-more {
+  display: none;
+}
+
+.discuss-read-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.discuss-fade-area {
+  height: 8rem;
+  background-image: linear-gradient(to bottom, transparent, var(--card-bg));
+}
+
+.discuss-read-more-button-wrapper {
+  background-color: var(--card-bg);
+}
+
+.discuss-read-more-button-wrapper button.btn {
+  font-size: 1.2rem;
+}
+
+.news-content {
+  position: relative;
 }
 
 .news-content pre {
@@ -2200,20 +2234,14 @@ input:focus + .slider {
 
 /* Board svg */
 
-image.ghost, image.hover-ghost {
-  filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.9));
+
+.stone-shadow {
+  filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.5));
 }
 
-image.white.ghost, image.black.ghost {
-  opacity: 0;
-}
-
-image.white.hover-ghost, image.black.hover-ghost {
+.hover-ghost {
   opacity: 0.5;
-}
-
-image.black.hidden-ghost, image.white.hidden-ghost {
-  opacity: 0;
+  filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.9));
 }
 
 circle.circle-label.hidden {
