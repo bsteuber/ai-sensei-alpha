@@ -465,13 +465,27 @@ hr.showcase-line {
   padding-top: 0.5rem;
 }
 
-.landing-title {
-  font-size: 3.5rem;
-  font-weight: 800;
+.landing-nav {
+  position: fixed;
+  margin-top: -1rem;
+  background-color: white;
+  z-index: 10;
 }
 
-#content .landing-feature h1, #content .landing-feature h2 {
-  color: black !important;
+.landing-nav a:hover {
+  text-decoration: none;
+}
+
+.landing-title {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.landing-subtitle {
+  font-size: 2rem;
+  color: #575757;
+  margin: 2rem 0;
 }
 
 #content .landing-feature h2 {
@@ -480,7 +494,7 @@ hr.showcase-line {
 }
 
 .landing-title-highlight {
-  color: #5f90ad;
+  color: #1051a4;
 }
 
 #landing-page .btn-primary {
@@ -494,6 +508,7 @@ hr.showcase-line {
 }
 
 .landing-title-img {
+  margin-top: 1rem;
   width:  100%;
   max-width: 800px;
   aspect-ratio: 996 / 589;
@@ -720,6 +735,15 @@ h2.landing-feature-title {
 
 .btn-signup:focus {
   box-shadow: none;
+}
+
+#landing-page .btn-signup {
+  color: #f2efff;
+  background-color: rgb(16, 81, 164);
+}
+
+#landing-page .btn-signup:hover {
+  background-color: rgb(47, 121, 215);
 }
 
 .btn-link.disabled {
