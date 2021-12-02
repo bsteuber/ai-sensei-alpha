@@ -173,6 +173,8 @@
   --card-element-bg: #20274d4f;
   --card-element-border:#00000020;
   --game-title: #806511;
+  --game-info-hover-bg: #0000640e;
+  --game-info-active-bg: #00006416;
   --page-hover-bg: #00000020;
   --tag-hover-bg: #00000060;
   --tag-active-bg: #000000a0;
@@ -687,8 +689,7 @@ h2.landing-feature-title {
 .main-nav,
 .main-nav .btn-link,
 .main-nav a.logo,
-.footer .btn-link,
-.games-page
+.footer .btn-link
 {
   color: var(--nav-fg);
 }
@@ -1382,23 +1383,26 @@ a.game-link {
   background-color: var(--tag-active-bg);
 }
 
-.container-fluid.games-page {
-  padding-left: 5px;
-  padding-right: 0px;
-}
-
 .games-page .tag-wrapper .tag {
   border: 1px solid var(--tag-border);
 }
 
 .game-cell {
   margin-bottom: 1.6rem;
-  border: 1px solid #DDE3DF;
+  background-color: var(--page-bg);
+  filter: drop-shadow(2px 3px 4px rgba(0,0,0,0.2));
+}
+
+.game-area:hover .game-link-info  {
+  background-color: var(--game-info-hover-bg);
+  cursor: pointer;
+}
+
+.game-area:active .game-link-info  {
+  background-color: var(--game-info-active-bg);
 }
 
 .discuss-page .game-cell, .news-page .game-cell {
-  border: none;
-  background-color: var(--page-bg);
   margin-bottom: 0.3rem;
   padding-bottom: 0.1rem;
 }
@@ -1421,7 +1425,6 @@ a.game-link {
 
 .game-link-info-players {
   margin: 0.5rem;
-  margin-bottom: 1rem;
 }
 
 .game-link-info-tags {
@@ -1431,7 +1434,7 @@ a.game-link {
 }
 
 .game-link-info {
-  margin-bottom: -0.5rem;
+
 }
 
 .game-link-info, .game-list-menu-toggle {
@@ -1468,7 +1471,11 @@ a.game-link {
 }
 
 .player-name.pointer:hover {
-  background-color: var(--page-hover-bg);
+  background-color: var(--game-info-hover-bg);
+}
+
+.player-name.pointer:active {
+  background-color: var(--game-info-active-bg);
 }
 
 .player-name.winner, .player-rank.winner {
@@ -1789,6 +1796,10 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
   font-size: 0.833rem !important;
 }
 
+.font-normal {
+  font-size: 1rem;
+}
+
 .font-main-navigation {
   font-size: 1.2rem !important;
 }
@@ -1837,9 +1848,12 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
   margin-right: -0.8rem;
 }
 
-.news-list, .single-news-item {
+.tight-container {
   font-size: 1.25rem;
   max-width: 75ex;
+}
+
+.news-list, .single-news-item {
   margin-bottom: 2rem;
 }
 
@@ -2597,7 +2611,7 @@ a.post-card {
 }
 
 .post-card h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .post-card h2 {
