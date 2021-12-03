@@ -397,7 +397,12 @@ body, #game.fullscreen {
 }
 
 .landing-footer {
-  margin-bottom: -1.8rem;
+  margin-top: 3rem;
+  margin-bottom: -1.5rem;
+}
+
+.landing-footer.with-cookie-overlay {
+  margin-bottom: 3.5rem;
 }
 
 .main-nav .legal-info a {
@@ -467,13 +472,19 @@ hr.showcase-line {
 
 .landing-nav {
   position: fixed;
+  width: 100%;
   margin-top: -1rem;
+  padding-top: 1rem;
   background-color: white;
   z-index: 10;
 }
 
 .landing-nav a:hover {
   text-decoration: none;
+}
+
+.landing-banner {
+  margin-top: 7rem;
 }
 
 .landing-title {
@@ -484,8 +495,8 @@ hr.showcase-line {
 
 .landing-subtitle {
   font-size: 2rem;
-  color: #575757;
-  margin: 2rem 0;
+  color: #484747;
+  margin: 4rem 0;
 }
 
 #content .landing-feature h2 {
@@ -511,7 +522,7 @@ hr.showcase-line {
   margin-top: 1rem;
   width:  100%;
   max-width: 800px;
-  aspect-ratio: 996 / 589;
+  aspect-ratio: 870 / 870;
 }
 
 .landing-title-text {
@@ -738,12 +749,12 @@ h2.landing-feature-title {
 }
 
 #landing-page .btn-signup {
-  color: #f2efff;
-  background-color: rgb(16, 81, 164);
+  color: white;
+  background-color: rgb(22, 116, 236);
 }
 
 #landing-page .btn-signup:hover {
-  background-color: rgb(47, 121, 215);
+  background-color: rgb(66, 141, 236);
 }
 
 .btn-link.disabled {
@@ -2170,7 +2181,7 @@ rect.white-errors {
   width: 100vw;
   min-width: 100vw;
   padding: 1em;
-  background-color: rgb(234, 175, 69);
+  background-color: #cddbee;
   color: black;
 }
 
