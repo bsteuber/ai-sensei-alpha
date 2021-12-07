@@ -1363,7 +1363,7 @@ input.form-control-file {
 }
 
 .card.discuss .card-body {
-    padding: 0.5rem 1rem;
+    padding: 0
 }
 
 .card.discuss .btn-sm {
@@ -1388,6 +1388,12 @@ input.form-control-file {
 .discuss .author, .discuss .date, .discuss .comment-count {
   font-size: 85%;
   color: var(--card-unimportant-fg);
+}
+
+.discuss .comment-footer {
+  margin-top: -0.7rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #00000030;
 }
 
 a.game-link {
@@ -1874,8 +1880,8 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
   }
 }
 
-#content .card.news-box {
-  background-color: #ddc398de;
+.news-card {
+  margin: 2rem 0;
 }
 
 .news-date {
