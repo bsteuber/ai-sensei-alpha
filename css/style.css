@@ -194,7 +194,9 @@
 
 .game-sidebar .btn-primary:disabled,
 .game-sidebar .btn-primary.disabled {
-  background-color: #454c5d !important;
+  background-color: var(--nav-bg) !important;
+  opacity: 0.8;
+  cursor: not-allowed;
   border: 1px solid var(--card-element-border) !important;
 }
 
@@ -338,6 +340,10 @@ body, #game.fullscreen {
   padding-top: 4.8rem;
 }
 
+.nav-small.training-page #content {
+  padding-top: 3.8rem;
+}
+
 .fullscreen #content, .game-page #content, .training-page #content {
   padding-top: 0;
 }
@@ -413,39 +419,6 @@ body, #game.fullscreen {
 .landing-footer .legal-info a {
   padding: 0 0.5rem;
   color: #555;
-}
-
-#fb-share-button {
-  background: #3b5998;
-  border-radius: 0.1875rem;
-  font-weight: 600;
-  padding: 0.1875rem 0.25rem;
-  display: inline-block;
-  position: static;
-}
-
-#fb-share-button:hover {
-  cursor: pointer;
-  background: #213A6F;
-}
-
-#fb-share-button.disabled {
-  cursor: disabled;
-  background: #626b78;
-}
-
-#fb-share-button svg {
-  width: 1.125rem;
-  fill: white;
-  vertical-align: middle;
-  border-radius: 0.125rem;
-}
-
-#fb-share-button span {
-  vertical-align: middle;
-  color: white;
-  font-size: 0.875rem;
-  padding: 0 0.1875rem;
 }
 
 hr.showcase-line {
@@ -578,6 +551,17 @@ h2.landing-feature-title {
   top: 16px;
   left: 14px;
   width: 36px;
+}
+
+.landing-icon.discuss {
+  width: 50px;
+  height: 50px;
+}
+
+.landing-icon-box.discuss {
+  left: 2px;
+  top: 1px;
+  width: 50px;
 }
 
 .landing-icon.quiz {
@@ -822,7 +806,7 @@ h2.landing-feature-title {
 }
 
 .large-drop-shadow {
-  filter: drop-shadow(4px 5px 2px rgba(0,0,0,0.3));
+  filter: drop-shadow(3px 4px 2px rgba(0,0,0,0.3));
 }
 
 a, .btn-link {
@@ -1786,8 +1770,10 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
 
 .winrate-progress {
   height: 1.4rem;
-  font-size: 0.9rem !important;
+  font-size: 1rem !important;
   border-radius: 8rem;
+  font-weight: normal !important;
+  letter-spacing: 0.05em;
 }
 
 #score-graph text.move-text {
