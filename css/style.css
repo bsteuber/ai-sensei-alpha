@@ -523,6 +523,10 @@ h2.landing-feature-title {
   font-size: 2.5rem;
 }
 
+.landing-showcase video {
+  max-width: 100%;
+}
+
 .landing-icon-wrapper {
   position: relative;
   width: 60px;
