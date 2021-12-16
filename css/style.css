@@ -457,24 +457,23 @@ hr.showcase-line {
 }
 
 .landing-banner {
-  margin-top: 7rem;
+  margin: 2.5rem 0 0;
 }
 
 .landing-title {
-  font-size: 4rem;
+  font-size: 2.1rem;
   font-weight: 600;
   margin: 1rem 0;
 }
 
 .landing-subtitle {
-  font-size: 2rem;
-  color: #484747;
-  margin: 4rem 0;
+  font-size: 1.3rem;
+  margin: 1rem 0;
 }
 
-#content .landing-feature h2 {
-  font-size: 3rem;
-  font-weight: 500;
+.landing-feature {
+  padding: 1.5rem 1rem 0;
+  margin: 0;
 }
 
 .landing-title-highlight {
@@ -492,10 +491,10 @@ hr.showcase-line {
 }
 
 .landing-title-img {
-  margin-top: 1rem;
+  margin: 0;
   width:  100%;
-  max-width: 800px;
-  aspect-ratio: 870 / 870;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
 }
 
 .landing-title-text {
@@ -519,8 +518,13 @@ hr.showcase-line {
   font-weight: normal;
 }
 
-h2.landing-feature-title {
-  font-size: 2.5rem;
+.landing-feature-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.landing-showcase {
+  padding-bottom: 2rem;
 }
 
 .landing-showcase video {
@@ -640,48 +644,74 @@ h2.landing-feature-title {
 
 /* xs */
 @media (max-width: 575.98px) {
-  .landing-title {
-    font-size: 2.5rem;
+  .landing-feature .container {
+    margin: 0;
+    padding: 0;
   }
-
-  .landing-title-text {
-    font-size: 1.6rem;
-  }
-
-  .landing-title-img-wrapper {
-    padding: 0 5px !important;
-  }
-
 }
 
 /* sm */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  #landing-page .container {
-    padding: 0;
+
+  .landing-feature .container {
+    margin: 0;
+    padding: 0 1rem;
   }
 
   .landing-title {
-    font-size: 2.75rem;
+    font-size: 2.2rem;
   }
 
-  #features-wrapper {
-    max-width: 34rem;
+  .landing-subtitle {
+    font-size: 1.4rem;
+    margin: 1rem 0 2rem;
   }
 }
 
 /* md */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  #features-wrapper {
-    max-width: 34rem;
+  .landing-title {
+    font-size: 2.2rem;
+  }
+
+  .landing-subtitle {
+    font-size: 1.4rem;
+    margin: 1rem 0 2rem;
   }
 }
 
 /* lg */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+  .landing-banner {
+    margin-top: 3rem;
+  }
+
+  .landing-title {
+    font-size: 3rem;
+  }
+
+  .landing-subtitle {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem;
+  }
 }
 
 /* xl */
 @media (min-width: 1200px) {
+  .landing-banner {
+    margin-top: 7rem;
+  }
+
+  .landing-title {
+    font-size: 3rem;
+  }
+
+  .landing-subtitle {
+    color: #393939;
+    font-size: 1.7rem;
+    margin: 1rem 0 2rem;
+  }
 }
 
 #content h1,
