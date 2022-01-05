@@ -338,7 +338,7 @@ body, #game.fullscreen {
 
 .nav-small #content {
   padding-top: 4.8rem;
-  padding-bottom: 4rem; /* workaround for mobile bottom address bar bug */
+  padding-bottom: 6rem; /* workaround for mobile bottom address bar bug */
 }
 
 .nav-small.training-page #content {
@@ -2842,6 +2842,12 @@ a.post-card {
 .problem-stats.detailed {
   font-size: 1.3rem;
 }
+
+.life-time-value-page .table-bordered th,
+.life-time-value-page .table-bordered td {
+    border: 1px solid #bbb;
+}
+
 
 :root {
   --icon-fill-color: #009f2f;
