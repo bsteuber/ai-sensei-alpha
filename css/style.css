@@ -328,7 +328,7 @@ body, #game.fullscreen {
   font-family: prompt, sans-serif;
 }
 
-#content-wrapper:not(.game-page):not(.training-page) {
+#content-wrapper:not(.game-page):not(.training-page):not(.play-ai-game-page) {
   overflow-y: scroll;
 }
 
@@ -345,7 +345,10 @@ body, #game.fullscreen {
   padding-top: 3.8rem;
 }
 
-.fullscreen #content, .game-page #content, .training-page #content {
+.fullscreen #content,
+.game-page #content,
+.training-page #content,
+.play-ai-game-page #content {
   padding-top: 0;
 }
 
@@ -1665,7 +1668,7 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
   color: #398fdb;
 }
 
-.analysis-game-row, .trial-game-row {
+.analysis-game-row, .trial-game-row, play-ai-game-row {
   margin: -1rem 0 -0.3rem;
 }
 
@@ -2386,6 +2389,15 @@ circle.ownership.diff.white { stroke: white; }
   opacity: 1;
   filter: drop-shadow(1px 1px 2px rgba(0,0,0,.6));
 }
+
+.hide-suggestion-dots .with-category .move-category {
+  display: none;
+}
+
+.hide-suggestion-dots .with-circle.with-category .move-category {
+  display: block;
+}
+
 
 .black-stone .move-category, .white-stone .move-category {
   filter: none;
