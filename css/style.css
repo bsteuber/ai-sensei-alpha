@@ -341,7 +341,7 @@ body, #game.fullscreen {
   padding-bottom: 6rem; /* workaround for mobile bottom address bar bug */
 }
 
-.nav-small.training-page #content {
+.nav-small.training-page #content, .nav-small.play-ai-game-page #content {
   padding-top: 3.8rem;
 }
 
