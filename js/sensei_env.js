@@ -6,5 +6,6 @@ SENSEI_ENV = {
   WS_SCHEDULER_URL: "wss://ai-sensei.com/ws",
   ENABLE_LIVE_MODE: "true",
   ENABLE_FAST_LEVEL_UP: "true",
+  ENABLE_WEAKER_BOTS: "true",
   READ_FROM_FIRESTORE_DURING_MIGRATION: "true"
 };
