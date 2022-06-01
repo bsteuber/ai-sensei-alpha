@@ -2665,11 +2665,24 @@ path.check-mark {
   border: 1px solid #00000040;
 }
 
+.btn-plan {
+  border: 1px solid #00000040;
+  box-shadow: none !important;
+}
+
+.btn-plan.selected {
+  box-shadow: 0 0 0 .1rem #00000066 !important;
+}
+
 .badge-free, .badge-basic, .badge-standard, .badge-pro {
   color: #333;
 }
 
-.badge-free {
+.btn-plan.free {
+  background-color: #eeeeee55;
+}
+
+.badge-free, .btn-plan.free.selected {
   background-color: white;
 }
 
@@ -2681,7 +2694,11 @@ path.check-mark {
   padding: 10px 15px 0px 10px;
 }
 
-.badge-basic, .plan-card-basic {
+.btn-plan.basic {
+  background-color: #9bbaf755;
+}
+
+.badge-basic, .plan-card-basic, .btn-plan.basic.selected {
   background-color: #9bbaf7;
 }
 
@@ -2689,7 +2706,19 @@ path.check-mark {
   background-color: #ddd;
 }
 
-.badge-pro, .plan-card-pro {
+.btn-plan.standard {
+  background-color: #e6e6e655;
+}
+
+.btn-plan.standard.selected {
+  background-color: #e6e6e6;
+}
+
+.btn-plan.pro {
+  background-color: #e3c10855;
+}
+
+.badge-pro, .plan-card-pro, .btn-plan.pro.selected {
   background-color: #e3c108;
 }
 
