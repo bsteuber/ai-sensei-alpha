@@ -1,0 +1,17 @@
+{
+    "name": "AI Sensei",
+    "short_name": "AI Sensei",
+    "start_url": "/",
+    "scope": ".",
+    "icons": [
+        {
+            "src": "/img/Logo_192.png",
+            "sizes": "192x192",
+            "purpose": "any maskable",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
