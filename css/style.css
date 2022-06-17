@@ -2227,7 +2227,7 @@ rect.white-errors {
   top: -0.8em;
   left: -0.2em;
   margin-right: -1.0rem;
-  font-size: 0.9rem;
+  font-size: 1rem !important;
   cursor: pointer;
  }
 
