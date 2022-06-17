@@ -1506,7 +1506,9 @@ a.game-link {
   font-size: 0.9rem;
 }
 
-.games-tag-selector .tag.badge, .discuss-page-selector .tag.badge {
+.games-tag-selector .tag.badge,
+.discuss-page-selector .tag.badge,
+.prefs-page-selector .tag.badge {
   font-size: 1rem;
 }
 
@@ -1619,6 +1621,10 @@ img.white-black {
   text-decoration: none !important;
 }
 
+.nav-control-inner {
+  width: 2.5rem;
+}
+
 .nav-control.nav-close-button {
   justify-content: start;
 }
@@ -1629,9 +1635,20 @@ img.white-black {
 }
 
 .controls {
-  height: 4rem;
   background-color: #ffffff50;
   border: 1px solid #00000020;
+}
+
+.controls .link:hover {
+  text-decoration: none;
+}
+
+.sidebar-menu-label, .nav-control-label {
+  margin-top: 0.1rem;
+}
+
+.expert-mode .sidebar-menu-label, .expert-mode .nav-control-label {
+  display: none;
 }
 
 .controls i {
@@ -1645,10 +1662,6 @@ img.white-black {
 .button-row button {
   margin-top: 2px;
   margin-bottom: 2px;
-}
-
-button i.icon-previous_mistake, button i.icon-next_mistake {
-  font-size: 1.6rem;
 }
 
 .trial-board-icon {
@@ -1752,6 +1765,15 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
 
 .controls .icon-to_end_of_game, .controls .icon-rewind_to_start {
   font-size: 4.3rem !important;
+  margin: -0.9rem 0 -0.8rem;
+}
+
+.controls .icon-next_mistake, .controls .icon-previous_mistake {
+  margin: -0.5rem 0 -0.5rem;
+}
+
+.controls .icon-next_move, .controls .icon-previous_move {
+  margin: -0.5rem 0 -0.5rem;
 }
 
 .controls .navigate-quiz-mode {
@@ -1856,6 +1878,10 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
 
 .font-x-small {
   font-size: 0.625rem !important;
+}
+
+.font-smaller {
+  font-size: 0.7rem !important;
 }
 
 .font-small {
@@ -2640,6 +2666,7 @@ path.check-mark {
 .popover {
   border-radius: 1rem;
   filter: drop-shadow(0.3rem 0.4rem 0.15rem rgba(0,0,0,0.5));
+  background-color: #ffffffed;
   -webkit-transform: translate3d(0,0,0);
 }
 
@@ -2651,6 +2678,7 @@ path.check-mark {
   right: 0.4rem;
   top: -1rem;
   border-width: 0 0.2rem 1.7rem 1rem;
+  bottom-border-color: #ffffffed;
 }
 
 .bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow::before,
@@ -2665,6 +2693,7 @@ path.check-mark {
   right: 0.4rem;
   bottom: -1rem;
   border-width: 1.7rem 0.2rem 0 1rem;
+  bottom-top-color: #ffffffed;
 }
 
 .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::before,
