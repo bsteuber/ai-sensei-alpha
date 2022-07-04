@@ -1081,16 +1081,8 @@ a.highlight {
   margin-right: 2em;
 }
 
-.upload-page2 .quality-slider .playouts {
-  font-size: 0.75rem;
-}
-
-.upload-page2 .quality-slider .new-slider {
-  margin-top: 0.1rem;
-}
-
-.upload-page2 .quality-slider .badge-free {
-  background-color: #ded8;
+.upload-quality-options .btn-plan {
+  width: 4em;
 }
 
 .analysis-tag {
@@ -2732,80 +2724,84 @@ path.check-mark {
   border-bottom-color: var(--board-tooltip);
 }
 
-.card-body .plan-badge {
-  border: 1px solid #00000040;
-}
-
 .btn-plan {
-  border: 1px solid #00000040;
-  box-shadow: none !important;
+  border: none;
+  box-shadow: 0 0 0 .05rem #000000bb !important;
+  opacity: 0.8;
 }
 
-.btn-plan.selected {
-  box-shadow: 0 0 0 .1rem #00000066 !important;
+.btn-plan:hover {
+  box-shadow: 0 0 0 .1rem #000000bb !important;
+  opacity: 0.9;
+}
+
+.btn-plan.selected, .btn-plan.selected:hover {
+  box-shadow: 0 0 0 .2rem #000000bb !important;
+  opacity: 1;
+}
+
+.plan-badge {
+  border: 1px solid #00000040;
 }
 
 .badge-free, .badge-basic, .badge-standard, .badge-pro {
   color: #333;
 }
 
-.btn-plan.free {
-  background-color: #eeeeee55;
-}
-
-.badge-free, .btn-plan.free.selected {
+.badge-free, .btn-plan.free {
   background-color: white;
 }
 
 .plan-card {
-  border: 2px solid #060d82;
+  border: none;
 }
 
 .plan-card .card-body {
   padding: 10px 15px 0px 10px;
+  position: relative;
 }
 
-.btn-plan.basic {
-  background-color: #9bbaf755;
+.badge-free {
+  background-color: white;
 }
 
-.badge-basic, .plan-card-basic, .btn-plan.basic.selected {
-  background-color: #9bbaf7;
+.badge-basic, .plan-card-basic, .btn-plan.basic {
+  background: url(/img/textures/blue.jpg);
+  background-size: cover;
 }
 
-.badge-standard, .plan-card-standard {
-  background-color: #ddd;
+.badge-standard, .plan-card-standard, .btn-plan.standard {
+  background: url(/img/textures/silver.jpg);
+  background-size: cover;
 }
 
-.btn-plan.standard {
-  background-color: #e6e6e655;
+.badge-pro, .plan-card-pro, .btn-plan.pro {
+  background: url(/img/textures/gold.jpg);
+  background-size: cover;
 }
 
-.btn-plan.standard.selected {
-  background-color: #e6e6e6;
+.badge-free {
+  background-color: #eee;
 }
 
-.btn-plan.pro {
-  background-color: #e3c10855;
-}
-
-.badge-pro, .plan-card-pro, .btn-plan.pro.selected {
-  background-color: #e3c108;
-}
-
-
-.card-option-selected {
-  border-color: transparent;
-  box-shadow: 0 0 0 2px blue;
+.card-option-unselected {
+  opacity: 0.8;
+  box-shadow: 0 0 0 .05rem #000000bb !important;
 }
 
 .card-option-unselected:hover {
-  border-color: transparent;
-  box-shadow: 0 0 0 1px blue;
+  box-shadow: 0 0 0 .1rem #000000bb !important;
+  opacity: 0.9;
 }
 
+.card-option-selected {
+  box-shadow: 0 0 0 .2rem #000000bb !important;
+  opacity: 1;
+}
+
+
 .card-option-selected .card-check-mark {
-  color: blue;
+  color: #000000bb;
 }
 
 a.post-card {
