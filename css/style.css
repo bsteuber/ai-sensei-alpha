@@ -2426,11 +2426,11 @@ circle.ownership.diff.white { stroke: white; }
 }
 
 .hide-suggestion-dots .with-category .move-category {
-  display: none;
+  visibility: hidden;
 }
 
 .hide-suggestion-dots .with-circle.with-category .move-category {
-  display: block;
+  visibility: visible;
 }
 
 
@@ -2642,9 +2642,9 @@ path.check-mark {
 }
 
 .hint-square {
-  fill: rgba(189,208,164,0.3);
-  stroke: #cccab2;
-  stroke-width: 1px;
+  fill: rgba(255,255,255,0.3);
+  stroke: white;
+  stroke-width: 3px;
   vector-effect: non-scaling-stroke;
 }
 
@@ -3083,9 +3083,23 @@ a.post-card {
   background-color: #00000030
 }
 
+.expert-mode-select .select-button {
+  box-shadow: 0 0 0 1px #000000bb;
+  opacity: 0.8;
+}
 
+.expert-mode-select .select-button:hover {
+  box-shadow: 0 0 0 2px #000000bb;
+}
 
+.expert-mode-select .select-button.selected {
+  box-shadow: 0 0 0 3px #000000bb !important;
+  opacity: 1;
+}
 
+.expert-mode-select img {
+  max-width: 100%;
+}
 
 /* Slider CSS
 generated from http://danielstern.ca/range.css/?ref=css-tricks#/
