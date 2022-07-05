@@ -2726,17 +2726,17 @@ path.check-mark {
 
 .btn-plan {
   border: none;
-  box-shadow: 0 0 0 .05rem #000000bb !important;
+  box-shadow: 0 0 0 1px #000000bb !important;
   opacity: 0.8;
 }
 
 .btn-plan:hover {
-  box-shadow: 0 0 0 .1rem #000000bb !important;
+  box-shadow: 0 0 0 2px #000000bb !important;
   opacity: 0.9;
 }
 
 .btn-plan.selected, .btn-plan.selected:hover {
-  box-shadow: 0 0 0 .2rem #000000bb !important;
+  box-shadow: 0 0 0 3px #000000bb !important;
   opacity: 1;
 }
 
@@ -2786,16 +2786,16 @@ path.check-mark {
 
 .card-option-unselected {
   opacity: 0.8;
-  box-shadow: 0 0 0 .05rem #000000bb !important;
+  box-shadow: 0 0 0 1px #000000bb !important;
 }
 
 .card-option-unselected:hover {
-  box-shadow: 0 0 0 .1rem #000000bb !important;
+  box-shadow: 0 0 0 2px #000000bb !important;
   opacity: 0.9;
 }
 
 .card-option-selected {
-  box-shadow: 0 0 0 .2rem #000000bb !important;
+  box-shadow: 0 0 0 3px #000000bb !important;
   opacity: 1;
 }
 
