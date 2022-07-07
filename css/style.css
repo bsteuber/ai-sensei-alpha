@@ -424,6 +424,14 @@ body, #game.fullscreen {
   color: var(--nav-footer-fg);
 }
 
+.main-nav .legal-info a.active {
+  color: var(--nav-active-fg);
+}
+
+.main-nav .legal-info a:hover {
+  color: var(--nav-hover-fg);
+}
+
 .landing-footer .legal-info a {
   padding: 0 0.5rem;
   color: #555;
