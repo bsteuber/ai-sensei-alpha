@@ -9,22 +9,40 @@
     "description": "",
     "icons": [
         {
+            "src": "/img/pwa-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
             "src": "/img/pwa-icon-maskable-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
-            "purpose": "any maskable"
+            "purpose": "maskable"
+        },
+        {
+            "src": "/img/pwa-icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "any"
         },
         {
             "src": "/img/pwa-icon-maskable-384x384.png",
             "sizes": "384x384",
             "type": "image/png",
-            "purpose": "any maskable"
+            "purpose": "maskable"
+        },
+        {
+            "src": "/img/pwa-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
         },
         {
             "src": "/img/pwa-icon-maskable-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
-            "purpose": "any maskable"
+            "purpose": "maskable"
         }
     ]
 }
