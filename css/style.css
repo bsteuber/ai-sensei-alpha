@@ -108,7 +108,6 @@
   --blunder-on-black: #cb3330;
   --blunder-on-white: #ff0500;
   --board-tooltip: #ffffffd0;
-  --plan-basic-bg
 }
 
 #app.theme-dark {
@@ -1094,8 +1093,8 @@ a.highlight {
   margin-right: 2em;
 }
 
-.quality-slider .slider-value-1 .knob {
-  background-color: blue;
+.upload-quality-options .btn-plan {
+  width: 4em;
 }
 
 .analysis-tag {
@@ -1257,20 +1256,12 @@ input.form-control-file {
   font-size: 1.2rem;
 }
 
-.main-nav .user-name {
-  margin-bottom: 0.4rem;
-  margin-left: 1.5rem;
-  font-weight: bold;
-}
-
-.main-nav .user-name {
-  max-width: 8rem;
-  font-size: 1.3rem !important;
-}
-
-.main-nav.expanded .user-name {
-  max-width: 15rem;
-  font-size: 1.5rem !important;
+.main-nav.expanded .nav-row.nav-row-large .navigation-label {
+  max-width: 10rem;
+  font-size: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .main-nav .btn-signup {
@@ -1285,7 +1276,7 @@ input.form-control-file {
   color: white;
   position: absolute;
   margin-left: -1.8rem;
-  margin-top: 0.1rem;
+  margin-top: -1.1rem;
   padding: 0 0.5rem;
   background-color: red;
   border-radius: 20px;
@@ -1322,18 +1313,6 @@ input.form-control-file {
 
 [class^="icon-"], [class*=" icon-"], .user-icon {
   font-size: 2rem;
-}
-
-@media (min-width: 1200px) {
-  .login-bar [class^="icon-"], .login-bar [class*=" icon-"], .login-bar .user-icon {
-    font-size: 2.5rem;
-  }
-  .login-bar .user-name {
-    font-size: 1.375rem;
-  }
-  .login-bar {
-    font-size: 1.25rem;
-  }
 }
 
 .button-icon {
@@ -2784,15 +2763,18 @@ path.check-mark {
 }
 
 .badge-basic, .plan-card-basic, .btn-plan.basic {
-  background-color: #9bbaf7;
+  background: url(/img/textures/blue.jpg);
+  background-size: cover;
 }
 
 .badge-standard, .plan-card-standard, .btn-plan.standard {
-  background-color: #ddd;
+  background: url(/img/textures/silver.jpg);
+  background-size: cover;
 }
 
 .badge-pro, .plan-card-pro, .btn-plan.pro {
-  background-color: #e3c10855;
+  background: url(/img/textures/gold.jpg);
+  background-size: cover;
 }
 
 .badge-free {
