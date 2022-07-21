@@ -108,6 +108,7 @@
   --blunder-on-black: #cb3330;
   --blunder-on-white: #ff0500;
   --board-tooltip: #ffffffd0;
+  --plan-basic-bg
 }
 
 #app.theme-dark {
@@ -951,6 +952,10 @@ a.highlight {
   padding: 0.2em 0.5em;
 }
 
+.sgf-info .select-rules {
+  padding: 0rem 0rem 0.22rem 0.15rem;
+}
+
 .sgf-info .datepicker input {
   padding: 0em 0.5em;
 }
@@ -1089,8 +1094,8 @@ a.highlight {
   margin-right: 2em;
 }
 
-.upload-quality-options .btn-plan {
-  width: 4em;
+.quality-slider .slider-value-1 .knob {
+  background-color: blue;
 }
 
 .analysis-tag {
@@ -2664,7 +2669,12 @@ path.check-mark {
   border-radius: 1rem;
   filter: drop-shadow(0.3rem 0.4rem 0.15rem rgba(0,0,0,0.5));
   background-color: #ffffffed;
+  z-index: 99;
   -webkit-transform: translate3d(0,0,0);
+}
+
+.popover.over-navigation {
+  z-index: 101;
 }
 
 .popover-arrow {
@@ -2774,18 +2784,15 @@ path.check-mark {
 }
 
 .badge-basic, .plan-card-basic, .btn-plan.basic {
-  background: url(/img/textures/blue.jpg);
-  background-size: cover;
+  background-color: #9bbaf7;
 }
 
 .badge-standard, .plan-card-standard, .btn-plan.standard {
-  background: url(/img/textures/silver.jpg);
-  background-size: cover;
+  background-color: #ddd;
 }
 
 .badge-pro, .plan-card-pro, .btn-plan.pro {
-  background: url(/img/textures/gold.jpg);
-  background-size: cover;
+  background-color: #e3c10855;
 }
 
 .badge-free {
