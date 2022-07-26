@@ -108,6 +108,9 @@
   --blunder-on-black: #cb3330;
   --blunder-on-white: #ff0500;
   --board-tooltip: #ffffffd0;
+  --plan-basic-bg: #9bbaf7;
+  --plan-dan-bg: #ddd;
+  --plan-pro-bg: #eece1f;
 }
 
 #app.theme-dark {
@@ -1093,8 +1096,16 @@ a.highlight {
   margin-right: 2em;
 }
 
-.upload-quality-options .btn-plan {
-  width: 4em;
+.quality-slider .slider-value-1 .knob {
+  background-color: var(--plan-basic-bg);
+}
+
+.quality-slider .slider-value-2 .knob {
+  background-color: var(--plan-dan-bg);
+}
+
+.quality-slider .slider-value-3 .knob {
+  background-color: var(--plan-pro-bg);
 }
 
 .analysis-tag {
@@ -1757,7 +1768,7 @@ img.white-black {
 }
 
 .controls .navigate-quiz-mode {
-  font-size: 1.7rem; !important;
+  font-size: 1.7rem !important;
   user-select: none;
 }
 
@@ -2763,18 +2774,15 @@ path.check-mark {
 }
 
 .badge-basic, .plan-card-basic, .btn-plan.basic {
-  background: url(/img/textures/blue.jpg);
-  background-size: cover;
+    background-color: var(--plan-basic-bg);
 }
 
 .badge-standard, .plan-card-standard, .btn-plan.standard {
-  background: url(/img/textures/silver.jpg);
-  background-size: cover;
+  background-color: var(--plan-dan-bg);
 }
 
 .badge-pro, .plan-card-pro, .btn-plan.pro {
-  background: url(/img/textures/gold.jpg);
-  background-size: cover;
+  background-color: var(--plan-pro-bg);
 }
 
 .badge-free {
