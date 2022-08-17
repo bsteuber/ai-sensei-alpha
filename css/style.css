@@ -1096,6 +1096,10 @@ a.highlight {
   margin-right: 2em;
 }
 
+.upload-page .btn-lg {
+  font-size: 1.6rem;
+}
+
 .quality-slider .slider-value-1 .knob {
   background-color: var(--plan-basic-bg);
 }
