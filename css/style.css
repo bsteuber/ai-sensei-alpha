@@ -1962,6 +1962,7 @@ img.white-black {
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: min(80vw, 50rem);
+    margin-bottom: 10%;
   }
 }
 
