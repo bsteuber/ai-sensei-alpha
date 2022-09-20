@@ -441,6 +441,36 @@ body, #game.fullscreen {
   color: #555;
 }
 
+.load-screen-wrapper {
+  /*padding-left: 17rem; small: 5rem   header:3.8rem*/
+  margin-top: -1rem;
+  height: 100vh;
+  width: 100vw;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content .card.load-screen-card {
+  background-color: var(--nav-bg);
+  border:           1px solid var(--nav-fg);
+  font-size:        3rem;
+  color:            white;
+  text-align: center;
+  width: 65rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+#content .card.load-screen-card .card-body {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+#content .card.load-screen-card img {
+  width: 90px;
+}
+
 #landing-page {
   margin-top: -4rem;
   padding-top: 4rem;
@@ -658,6 +688,13 @@ body, #game.fullscreen {
     margin: 0;
     padding: 0;
   }
+
+  .load-screen-wrapper {
+    padding-top: 3.8rem;
+  }
+  #content .card.load-screen-card {
+    font-size:        2rem;
+  }
 }
 
 /* sm */
@@ -676,6 +713,10 @@ body, #game.fullscreen {
     font-size: 1.4rem;
     margin: 1rem 0 2rem;
   }
+
+  .load-screen-wrapper {
+    padding-top: 3.8rem;
+  }
 }
 
 /* md */
@@ -687,6 +728,10 @@ body, #game.fullscreen {
   .landing-subtitle {
     font-size: 1.4rem;
     margin: 1rem 0 2rem;
+  }
+
+  .load-screen-wrapper {
+    padding-left: 5rem;
   }
 }
 
@@ -705,6 +750,10 @@ body, #game.fullscreen {
     font-size: 1.5rem;
     margin: 1rem 0 2rem;
   }
+
+  .load-screen-wrapper {
+    padding-left: 5rem;
+  }
 }
 
 /* xl */
@@ -721,6 +770,10 @@ body, #game.fullscreen {
     color: #393939;
     font-size: 1.7rem;
     margin: 3rem 0 3em;
+  }
+
+  .load-screen-wrapper {
+    padding-left: 17rem;
   }
 }
 
