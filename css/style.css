@@ -1796,6 +1796,7 @@ img.white-black {
 .sidebar-menu-label,
 .nav-control-label {
   margin-top: 0.1rem;
+  height: 1em;
 }
 
 .expert-mode .sidebar-menu-label,
@@ -2654,6 +2655,15 @@ circle.ownership.diff.white {
 
 .move-category {
   display: none;
+}
+
+.ai-disabled .move-category,
+.ai-disabled .hide-on-ai-disabled {
+  display: none !important;
+}
+
+.easy-mode .hide-on-easy-mode {
+  display: none !important;
 }
 
 .with-category .move-category {
