@@ -1,3 +1,5 @@
+@import url(./firebase-ui-6.0.1/roboto.css);
+
 @font-face {
   font-family: 'prompt';
   src: url('fonts/Prompt-Regular.ttf');
@@ -2372,6 +2374,24 @@ img.article-image {
   to {
     opacity: 1;
   }
+}
+
+@keyframes show-delayed {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+.show-delayed {
+  -webkit-animation: 0.2s ease-out 0.1s 1 show-delayed;
+  -moz-animation: 0.2s ease-out 0.1s 1 show-delayed;
+  -ms-animation: 0.2s ease-out 0.1s 1 show-delayed;
+  -o-animation: 0.2s ease-out 0.1s 1 show-delayed;
+  animation: 0.2s ease-out 0.1s 1 show-delayed;
 }
 
 .color-row {
