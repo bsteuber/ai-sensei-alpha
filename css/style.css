@@ -2741,7 +2741,23 @@ circle.ownership.diff.white {
 }
 
 .ai-move-text {
-  color: #215888;
+  color: hsl(208, 61%, 33%);
+}
+
+.good-move-text {
+  color: hsl(118, 61%, 33%);
+}
+
+.inaccuracy-text {
+  color: hsl(65, 61%, 33%);
+}
+
+.mistake-text {
+  color: hsl(14, 61%, 33%);
+}
+
+.blunder-text {
+  color: hsl(0, 88%, 29%);
 }
 
 .category-badge.ai-move {
