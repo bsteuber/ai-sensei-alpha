@@ -3667,3 +3667,12 @@ input[type=range].styled-slider:hover::-ms-fill-upper {
 ::-webkit-scrollbar-corner {
   background: #000;
 }
+
+.equal-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.equal-columns>* {
+  flex: 1;
+}
