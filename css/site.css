@@ -1,3 +1,9 @@
+/* Layout */
+
+main {
+  padding: min(4%, 1rem);
+}
+
 /* Highlight badges */
 
 [data-highlight] {
@@ -13,4 +19,17 @@
   background: red;
   border-radius: 100px;
   padding: 0 0.3rem;
+}
+
+/* Admin pages */
+
+.admin-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.uid-input {
+  width: 40ch;
 }
