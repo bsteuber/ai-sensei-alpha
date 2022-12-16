@@ -1,7 +1,40 @@
+/* Variables */
+
+:root {
+  --color-accent: hsl(223, 25%, 22%);
+  --color-accent-hover: hsl(223, 25%, 30%);
+  --color-accent-text: white;
+}
+
 /* Layout */
 
-main {
-  padding: min(4%, 1rem);
+.my-wrapper {
+  padding: 0 0 1rem;
+}
+
+.my-container {
+  width: 90%;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+/* Buttons */
+
+.my-btn {
+  background-color: var(--color-accent);
+  border: none;
+  color: var(--color-accent-text);
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.my-btn:hover {
+  background-color: var(--color-accent-hover);
 }
 
 /* Highlight badges */
@@ -17,19 +50,31 @@ main {
   top: 0;
   font-size: 0.7rem;
   background: red;
+  color: white;
   border-radius: 100px;
   padding: 0 0.3rem;
 }
 
 /* Admin pages */
 
-.admin-form-row {
+.my-form-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2rem;
+  max-width: 60em;
+}
+
+.my-form-row>label {
+  font-weight: 500;
+  width: 30%;
+  min-width: 20ch;
+  margin-right: 1em;
 }
 
 .uid-input {
   width: 40ch;
+}
+
+.admin-date-str {
+  width: 30ch;
 }
