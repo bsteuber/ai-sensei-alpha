@@ -433,34 +433,74 @@ body,
 }
 
 .load-screen-wrapper {
-  margin-top: -1rem;
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  max-height: 100%;
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#content .card.load-screen-card {
+.load-screen-card {
   background-color: var(--nav-bg);
   border: 1px solid var(--nav-fg);
   font-size: 3rem;
   color: white;
   text-align: center;
-  width: 65rem;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  width: min(95%, 70rem);
+  font-size: max(1rem, 12vw);
+  padding: 1em 0.5em;
 }
 
-#content .card.load-screen-card .card-body {
+.load-screen {
   display: flex;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
-  justify-content: space-between;
+  height: 100%;
+  margin: 0 auto;
+  gap: 1em;
 }
 
-#content .card.load-screen-card img {
-  width: 90px;
+.load-screen-icon {
+  width: 3em;
+}
+
+.load-screen-text {
+  flex-grow: 1;
+}
+
+.load-screen-spinner {
+  font-size: 1.5em;
+  margin: 0.2em;
+}
+
+@media (min-width: 30em) {
+  .load-screen-card {
+    font-size: min(5vw, 3rem);
+  }
+
+  .load-screen {
+    flex-direction: row;
+    max-width: 18em;
+  }
+
+  .load-screen-text {
+    white-space: nowrap;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.my-spinner {
+  animation: rotation 1s infinite linear;
 }
 
 #landing-page {
@@ -687,10 +727,6 @@ body,
 
   .load-screen-wrapper {
     padding-top: 3.8rem;
-  }
-
-  #content .card.load-screen-card {
-    font-size: 2rem;
   }
 }
 
@@ -1050,23 +1086,23 @@ a.highlight {
   color: #967146;
 }
 
-#content .card {
+.card {
   background-color: var(--card-bg);
   filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.2));
   border: none;
   border-radius: 0;
 }
 
-#content .card.not-first {
+.card.not-first {
   clip-path: inset(0px -16px -16px -16px);
 }
 
-#content .bg-blue,
+.bg-blue,
 .bg-blue-opaque {
   background-color: var(--card-bg);
 }
 
-#content .no-blue .card {
+.no-blue .card {
   background-color: white;
 }
 
@@ -1356,7 +1392,7 @@ input.form-control-file {
   background-color: var(--nav-hover-bg);
 }
 
-#content .landing-nav h3 {
+.landing-nav h3 {
   color: black !important;
 }
 
@@ -1473,8 +1509,8 @@ input.form-control-file {
   width: 2rem;
 }
 
-#content .card.discuss,
-#content .card.post-card {
+.card.discuss,
+.card.post-card {
   background-color: var(--card-bg);
 }
 
@@ -2230,7 +2266,7 @@ img.article-image {
   display: inline-block;
 }
 
-#content .dropdown-content .card {
+.dropdown-content .card {
   background-color: white !important;
   color: black;
   max-height: 95vh;
