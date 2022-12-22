@@ -432,77 +432,6 @@ body,
   color: #555;
 }
 
-.load-screen-wrapper {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.load-screen-card {
-  background-color: var(--nav-bg);
-  border: 1px solid var(--nav-fg);
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-  width: min(95%, 70rem);
-  font-size: max(1rem, 12vw);
-  padding: 1em 0.5em;
-}
-
-.load-screen {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  height: 100%;
-  margin: 0 auto;
-  gap: 1em;
-}
-
-.load-screen-icon {
-  width: 3em;
-}
-
-.load-screen-text {
-  flex-grow: 1;
-}
-
-.load-screen-spinner {
-  font-size: 1.5em;
-  margin: 0.2em;
-}
-
-@media (min-width: 30em) {
-  .load-screen-card {
-    font-size: min(5vw, 3rem);
-  }
-
-  .load-screen {
-    flex-direction: row;
-    max-width: 18em;
-  }
-
-  .load-screen-text {
-    white-space: nowrap;
-  }
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-.my-spinner {
-  animation: rotation 1s infinite linear;
-}
-
 #landing-page {
   margin-top: -4rem;
   padding-top: 4rem;
@@ -3677,4 +3606,13 @@ input[type=range].styled-slider:hover::-ms-fill-upper {
 
 .equal-columns>* {
   flex: 1;
+}
+
+.firebaseui-container {
+  max-width: 460px;
+}
+
+.firebaseui-idp-button,
+.firebaseui-tenant-button {
+  max-width: 260px;
 }
