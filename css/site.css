@@ -71,7 +71,7 @@
   animation: rotation 1.5s infinite linear;
   aspect-ratio: 1/1;
   width: 1.4em;
-  margin: 0 0.6em;
+  margin: 0.6em;
   background-size: cover;
 }
 
@@ -83,29 +83,11 @@
   background-image: url(/img/spinner-light.png);
 }
 
-/* Admin pages */
-
-.my-form-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 60em;
+.button-spinner {
+  margin: 0;
 }
 
-.my-form-row>label {
-  font-weight: 500;
-  width: 30%;
-  min-width: 20ch;
-  margin-right: 1em;
-}
-
-.uid-input {
-  width: 40ch;
-}
-
-.admin-date-str {
-  width: 30ch;
-}
+/* PAGES */
 
 /* Load Screen */
 
@@ -164,4 +146,41 @@
   .load-screen-text {
     white-space: nowrap;
   }
+}
+
+/* Game list */
+
+.game-cell-spinner {
+  width: 40%;
+}
+
+/* Training overview page */
+
+.problem-page-start-training-spinner {
+  width: 2em;
+  margin-left: 2em;
+}
+
+/* Admin pages */
+
+.my-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 60em;
+}
+
+.my-form-row>label {
+  font-weight: 500;
+  width: 30%;
+  min-width: 20ch;
+  margin-right: 1em;
+}
+
+.uid-input {
+  width: 40ch;
+}
+
+.admin-date-str {
+  width: 30ch;
 }
