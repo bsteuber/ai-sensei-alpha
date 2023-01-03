@@ -1951,7 +1951,7 @@ play-ai-game-row {
 }
 
 #score-graph g.highlight rect {
-  fill: var(--move-color);
+  fill: var(--nav-bg);
   shape-rendering: crispEdges;
 }
 
