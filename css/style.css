@@ -2333,29 +2333,17 @@ img.article-image {
   stroke-width: 0;
 }
 
-.graph-black-area {
-  fill: #00000050;
-}
-
-.graph-white-area {
-  fill: #ffffff50;
-}
-
-.graph-zero-line {
-  stroke-width: 2;
-  stroke: #043db0;
-}
-
-rect.black-errors {
-  fill: black;
-}
-
-rect.white-errors {
-  fill: white;
-}
-
 .graph-axis-text {
-  font: 13px sans-serif;
+  font: 0.8rem sans-serif;
+}
+
+.error-circle {
+  pointer-events: all;
+  border-radius: 50%;
+}
+
+.error-circle.highlight {
+  box-shadow: 0 0 0.4rem red;
 }
 
 .quiz-results {
