@@ -2342,10 +2342,6 @@ img.article-image {
   border-radius: 50%;
 }
 
-.error-circle.highlight {
-  box-shadow: 0 0 0.4rem red;
-}
-
 .quiz-results {
   border: 4px solid #055b92;
   background-color: rgba(190, 206, 240, 0.9) !important;
