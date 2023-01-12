@@ -2367,8 +2367,7 @@ img.article-image {
 }
 
 .score-graph-error-circle.mistake {
-  fill: var(--mistake);
-  opacity: 0.7;
+  fill: #cf715e;
 }
 
 .score-graph-error-circle.blunder {
