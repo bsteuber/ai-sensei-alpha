@@ -405,6 +405,17 @@ body,
   font-size: 0.9rem;
 }
 
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+.social-media-icons a {
+  text-decoration: none;
+}
+
 .landing-footer {
   margin-top: 3rem;
   margin-bottom: -1.5rem;
@@ -414,7 +425,8 @@ body,
   margin-bottom: 3.5rem;
 }
 
-.main-nav .legal-info a {
+.main-nav .legal-info a,
+.social-media-icons a {
   padding: 0 0.5rem;
   color: var(--nav-footer-fg);
 }
@@ -423,11 +435,13 @@ body,
   color: var(--nav-active-fg);
 }
 
-.main-nav .legal-info a:hover {
+.main-nav .legal-info a:hover,
+.social-media-icons a:hover {
   color: var(--nav-hover-fg);
 }
 
-.landing-footer .legal-info a {
+.landing-footer .legal-info a,
+.landing-footer .social-media-icons a {
   padding: 0 0.5rem;
   color: #555;
 }
@@ -2334,7 +2348,8 @@ img.article-image {
 }
 
 .graph-axis-text {
-  font: 0.8rem sans-serif;
+  font: 0.6rem sans-serif;
+  font-weight: 600;
 }
 
 .error-circle {
