@@ -3288,10 +3288,37 @@ comment-body h7 {
 
 /* css table stuff */
 
+.css-table.worker-status .th, .css-table.worker-status .tr {
+  width: auto !important;
+  height: auto !important;
+  white-space: nowrap;
+}
+
+.job-queue-table, .worker-status {
+  margin: 0.8rem;
+}
+
+.job-queue-table .queue-high-playout-high-prio { background-color: #5ff; }
+.job-queue-table .queue-high-playout-low-prio { background-color: #8dd; }
+.job-queue-table .queue-low-playout-high-prio { background-color: #88d; }
+.job-queue-table .queue-low-playout-low-prio { background-color: #ccf; }
+.job-queue-table .queue-in-progress { background-color: #5f5; }
+.job-queue-table .queue-failure { background-color: #f55; }
+
+.worker-status .worker-connected { background-color: #8e8; }
+.worker-status .worker-error { background-color: #faa; }
+
+.job-queue-table .game-info span.job {
+  padding-left: 0.2rem;
+}
+
+.admin-job-queues .worker-status, .admin-job-queues .config  {
+  margin-bottom: 2rem;
+}
+
 .css-table {
   display: table;
   border-collapse: collapse;
-  margin: 0.8rem;
   height: 100%;
 }
 
@@ -3304,7 +3331,6 @@ comment-body h7 {
   display: table-cell;
   padding: 0.2rem 1rem;
   border: 1px solid rgba(0, 0, 0, .20);
-  width: 6rem;
 }
 
 .css-table .td {
@@ -3327,24 +3353,12 @@ comment-body h7 {
   border: none;
 }
 
-.css-table .thead .th .rotate {
-  transform: rotate(-30deg);
-  white-space: nowrap;
-  text-overflow: ellipses;
-  display: block;
-  bottom: 0;
-  left: 2rem;
-  width: 1rem;
-  height: 2rem;
-  position: absolute;
-}
-
-.worker-table .clickable-job {
+.job-queue-table .clickable-job {
   cursor: pointer;
   color: var(--link-color);
 }
 
-.worker-table .clickable-job:hover {
+.job-queue-table .clickable-job:hover {
   background-color: #00000030
 }
 
