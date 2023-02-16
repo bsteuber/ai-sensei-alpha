@@ -296,8 +296,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow: hidden;
 }
 
 #app {
@@ -366,56 +364,6 @@ body,
   background-color: red;
 }
 
-.nav-button {
-  background-color: transparent;
-  color: var(--nav-fg);
-  transition: none !important;
-  border-radius: 0;
-}
-
-.nav-button.active {
-  color: var(--nav-active-fg);
-  background-color: var(--nav-active-bg);
-  cursor: default !important;
-}
-
-.nav-button:focus {
-  box-shadow: none;
-}
-
-.nav-button:active {
-  box-shadow: none;
-  background-color: var(--nav-click-bg);
-  color: var(--nav-click-fg);
-  transform: translateY(1px);
-}
-
-.nav-button:not(.active):hover {
-  background-color: var(--nav-hover-bg);
-  color: var(--nav-hover-fg);
-}
-
-.main-nav .footer {
-  margin-top: 3rem;
-}
-
-.main-nav .legal-info,
-.landing-footer .legal-info {
-  padding: 0.5rem;
-  font-size: 0.9rem;
-}
-
-.social-media-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.5em;
-}
-
-.social-media-icons a {
-  text-decoration: none;
-}
-
 .landing-footer {
   margin-top: 3rem;
   margin-bottom: -1.5rem;
@@ -423,60 +371,6 @@ body,
 
 .landing-footer.with-cookie-overlay {
   margin-bottom: 3.5rem;
-}
-
-.main-nav .legal-info a,
-.social-media-icons a {
-  padding: 0 0.5rem;
-  color: var(--nav-footer-fg);
-}
-
-.main-nav .legal-info a.active {
-  color: var(--nav-active-fg);
-}
-
-.main-nav .legal-info a:hover,
-.social-media-icons a:hover {
-  color: var(--nav-hover-fg);
-}
-
-.landing-footer .legal-info a,
-.landing-footer .social-media-icons a {
-  padding: 0 0.5rem;
-  color: #555;
-}
-
-#landing-page {
-  margin-top: -4rem;
-  padding-top: 4rem;
-  background-color: white;
-  color: black;
-}
-
-#content-wrapper.nav-small.hide-header #landing-page {
-  margin-top: -4.8rem;
-  padding-top: 0.5rem;
-}
-
-.landing-nav {
-  position: fixed;
-  width: 100%;
-  margin-top: -1rem;
-  padding-top: 1rem;
-  background-color: white;
-  z-index: 10;
-}
-
-.landing-nav h3 {
-  font-weight: 700;
-}
-
-.landing-nav a:hover {
-  text-decoration: none;
-}
-
-.landing-banner {
-  margin: 2.5rem 0 0;
 }
 
 .landing-title {
@@ -497,11 +391,6 @@ body,
 
 .landing-title-highlight {
   color: #1051a4;
-}
-
-#landing-page .btn-primary {
-  background-color: #5f90ad;
-  border: none;
 }
 
 .landing-title-check-icon {
@@ -656,20 +545,11 @@ body,
   padding: 2rem 1rem;
 }
 
-#static-landing-page:not(.rendered) .btn-signup,
-#static-landing-page:not(.rendered) .cookie-settings-button {
-  visibility: hidden;
-}
-
 /* xs */
 @media (max-width: 575.98px) {
   .landing-feature .container {
     margin: 0;
     padding: 0;
-  }
-
-  .load-screen-wrapper {
-    padding-top: 3.8rem;
   }
 }
 
@@ -694,18 +574,10 @@ body,
     font-size: 1.4rem;
     margin: 1rem 0 2rem;
   }
-
-  .load-screen-wrapper {
-    padding-top: 3.8rem;
-  }
 }
 
 /* md */
 @media (min-width: 768px) and (max-width: 991.98px) {
-
-  .hidden .main-nav-toggle {
-    margin-left: 0.3rem !important;
-  }
 
   .landing-title {
     font-size: 2.2rem;
@@ -715,22 +587,10 @@ body,
     font-size: 1.4rem;
     margin: 1rem 0 2rem;
   }
-
-  .load-screen-wrapper {
-    padding-left: 5rem;
-  }
 }
 
 /* lg */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
-  .hidden .main-nav-toggle {
-    margin-left: 0.3rem !important;
-  }
-
-  .landing-banner {
-    margin-top: 3rem;
-  }
 
   .landing-title {
     font-size: 3rem;
@@ -740,22 +600,10 @@ body,
     font-size: 1.5rem;
     margin: 1rem 0 2rem;
   }
-
-  .load-screen-wrapper {
-    padding-left: 5rem;
-  }
 }
 
 /* xl */
 @media (min-width: 1200px) {
-
-  .hidden .main-nav-toggle {
-    margin-left: 0.3rem !important;
-  }
-
-  .landing-banner {
-    margin-top: 7rem;
-  }
 
   .landing-title {
     font-size: 3rem;
@@ -765,10 +613,6 @@ body,
     color: #393939;
     font-size: 1.7rem;
     margin: 3rem 0 3em;
-  }
-
-  .load-screen-wrapper {
-    padding-left: 17rem;
   }
 }
 
@@ -785,14 +629,6 @@ body,
 #content .card h3,
 #content .card h4 {
   color: var(--card-fg) !important;
-}
-
-
-.main-nav,
-.main-nav .btn-link,
-.main-nav a.logo,
-.footer .btn-link {
-  color: var(--nav-fg);
 }
 
 .faq .faq-item.highlight {
@@ -826,6 +662,7 @@ body,
 #landing-page .btn-signup {
   color: white;
   background-color: rgb(22, 116, 236);
+  font-size: 1.5rem;
 }
 
 #landing-page .btn-signup:hover {
@@ -1250,36 +1087,6 @@ input.form-control-file {
   stroke: black;
 }
 
-
-.main-nav {
-  color: var(--nav-fg);
-  width: 5rem;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transform: translate3d(0, 0, 0);
-  background-color: var(--nav-bg) !important;
-  font-size: 1rem;
-  flex-shrink: 0;
-}
-
-.main-nav.small-nav-header {
-  width: 100vw;
-  height: 3.8rem;
-  padding-top: 0.2rem;
-  margin-left: -0.2rem;
-  position: fixed;
-  z-index: 1;
-}
-
-.fullscreen .main-nav.small-nav-header {
-  display: none !important;
-}
-
-.game-page .main-nav.small-nav-header {
-  position: inherit;
-}
-
 .sidebar-overlay {
   position: absolute;
   z-index: 100;
@@ -1294,74 +1101,12 @@ input.form-control-file {
   opacity: 1;
 }
 
-.main-nav.expanded {
-  width: 17rem;
-}
-
-.main-nav.expanded .logo-row {
-  margin-top: 0.5rem;
-  margin-left: -0.3rem;
-  margin-bottom: 0.6rem;
-}
-
-.main-nav.expanded .nav-row {
-  margin-left: -0.5rem;
-}
-
-.main-nav .nav-row {
-  height: 2.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.main-nav .nav-icon {
-  width: 4rem;
-  margin: 0 1rem;
-  font-size: 1.2rem;
-}
-
-.main-nav-toggle {
-  background: transparent;
-  border: none;
-  color: var(--nav-fg);
-  font-size: 1.3rem;
-  margin-left: 1.7rem;
-  margin-right: .3rem;
-  padding: 0 0.5rem;
-}
-
-.main-nav-toggle:hover {
-  background-color: var(--nav-hover-bg);
-}
-
-.landing-nav h3 {
-  color: black !important;
-}
-
-.main-nav .nav-row {
-  padding: 0rem;
-  font-size: 0.9rem;
-}
-
-.main-nav.expanded .nav-row {
-  font-size: 1.2rem;
-}
-
 .main-nav.expanded .display-name {
   max-width: 10rem;
   font-size: 1.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.main-nav .btn-signup {
-  width: 5rem;
-}
-
-.main-nav.expanded .btn-signup {
-  width: 10rem;
 }
 
 .env-highlight {
@@ -1390,17 +1135,8 @@ input.form-control-file {
 
 }
 
-.main-nav h1 {
-  white-space: nowrap;
-  margin-top: 0.2rem;
-}
-
 #info-wrapper hr {
   margin: 0.8rem 0;
-}
-
-.main-nav a:hover {
-  text-decoration: none;
 }
 
 [class^="icon-"],
@@ -3288,31 +3024,56 @@ comment-body h7 {
 
 /* css table stuff */
 
-.css-table.worker-status .th, .css-table.worker-status .tr {
+.css-table.worker-status .th,
+.css-table.worker-status .tr {
   width: auto !important;
   height: auto !important;
   white-space: nowrap;
 }
 
-.job-queue-table, .worker-status {
+.job-queue-table,
+.worker-status {
   margin: 0.8rem;
 }
 
-.job-queue-table .queue-high-playout-high-prio { background-color: #5ff; }
-.job-queue-table .queue-high-playout-low-prio { background-color: #8dd; }
-.job-queue-table .queue-low-playout-high-prio { background-color: #88d; }
-.job-queue-table .queue-low-playout-low-prio { background-color: #ccf; }
-.job-queue-table .queue-in-progress { background-color: #5f5; }
-.job-queue-table .queue-failure { background-color: #f55; }
+.job-queue-table .queue-high-playout-high-prio {
+  background-color: #5ff;
+}
 
-.worker-status .worker-connected { background-color: #8e8; }
-.worker-status .worker-error { background-color: #faa; }
+.job-queue-table .queue-high-playout-low-prio {
+  background-color: #8dd;
+}
+
+.job-queue-table .queue-low-playout-high-prio {
+  background-color: #88d;
+}
+
+.job-queue-table .queue-low-playout-low-prio {
+  background-color: #ccf;
+}
+
+.job-queue-table .queue-in-progress {
+  background-color: #5f5;
+}
+
+.job-queue-table .queue-failure {
+  background-color: #f55;
+}
+
+.worker-status .worker-connected {
+  background-color: #8e8;
+}
+
+.worker-status .worker-error {
+  background-color: #faa;
+}
 
 .job-queue-table .game-info span.job {
   padding-left: 0.2rem;
 }
 
-.admin-job-queues .worker-status, .admin-job-queues .config  {
+.admin-job-queues .worker-status,
+.admin-job-queues .config {
   margin-bottom: 2rem;
 }
 
