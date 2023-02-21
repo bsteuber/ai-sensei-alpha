@@ -1832,39 +1832,6 @@ play-ai-game-row {
   padding-top: 0.3em;
 }
 
-.news-faded .news-inner-content {
-  position: relative;
-  max-height: 30rem;
-  overflow: hidden;
-}
-
-.news-unfaded .news-read-more {
-  display: none;
-}
-
-.news-read-more {
-  position: absolute;
-  pointer-events: none;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-}
-
-.news-fade-area {
-  height: 8rem;
-  background-image: linear-gradient(to bottom, transparent, var(--card-bg));
-}
-
-.news-read-more-button-wrapper {
-  background-color: var(--card-bg);
-  pointer-events: auto;
-}
-
-.news-read-more-button-wrapper button.btn {
-  font-size: 1.2rem;
-}
-
 .discuss-faded .discuss-inner-content {
   position: relative;
   height: 22rem;
