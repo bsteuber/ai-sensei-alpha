@@ -480,6 +480,14 @@ They are consistent to bootstrap at 16px font size.
   width: 40%;
 }
 
+/* Board */
+
+.board-background {
+  background-image: url(/img/kaya14d.jpg);
+  background-size: cover;
+  min-width: 5rem;
+}
+
 /* Training overview page */
 
 .problem-page-start-training-spinner {
