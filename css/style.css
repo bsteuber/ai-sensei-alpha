@@ -941,12 +941,18 @@ a.highlight {
   }
 }
 
-.board-background {
-  background-color: transparent;
+.board-column {
+  background-color: var(--page-bg);
+  flex: 1;
 }
 
-#board-wrapper {
-  overflow-y: auto;
+.board-background {
+  background-color: transparent;
+  border-radius: 2.2px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 11px 11px 21.9px,
+    rgba(0, 0, 0, 0.5) -0.7px -0.7px 1.5px inset,
+    rgba(255, 255, 255, 0.5) 0.7px 0.7px 1.5px inset;
 }
 
 .board {
@@ -1267,6 +1273,11 @@ a.game-link {
   filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.2));
 }
 
+.article-game .board-background {
+  width: 22rem;
+  height: 22rem;
+}
+
 .game-area:hover .game-link-info {
   background-color: var(--game-info-hover-bg);
   cursor: pointer;
@@ -1308,8 +1319,6 @@ a.game-link {
   height: 3rem;
   overflow-y: auto;
 }
-
-.game-link-info {}
 
 .game-link-info,
 .game-list-menu-toggle {
@@ -1803,11 +1812,6 @@ play-ai-game-row {
   margin: 2rem 0;
 }
 
-.news-date {
-  margin-top: -0.8rem;
-  margin-right: -0.8rem;
-}
-
 .tight-container {
   font-size: 1.25rem;
   max-width: 75ex;
@@ -1818,11 +1822,14 @@ play-ai-game-row {
   margin-bottom: 2rem;
 }
 
-.news-list h5 a,
-.single-news-item h5 a {
+.news-title {
   color: var(--card-fg);
-  font-size: 1.3em;
+  font-size: 1.6rem;
   font-weight: 500;
+}
+
+.news-date {
+  font-size: 1.2rem;
 }
 
 .news-list .card-body,
@@ -1830,37 +1837,6 @@ play-ai-game-row {
   margin: 0.5em;
   padding: 1em;
   padding-top: 0.3em;
-}
-
-.discuss-faded .discuss-inner-content {
-  position: relative;
-  height: 22rem;
-  overflow: hidden;
-}
-
-.discuss-unfaded .discuss-read-more {
-  display: none;
-}
-
-.discuss-read-more {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-}
-
-.discuss-fade-area {
-  height: 8rem;
-  background-image: linear-gradient(to bottom, transparent, var(--card-bg));
-}
-
-.discuss-read-more-button-wrapper {
-  background-color: var(--card-bg);
-}
-
-.discuss-read-more-button-wrapper button.btn {
-  font-size: 1.2rem;
 }
 
 .news-content {
@@ -1876,8 +1852,8 @@ play-ai-game-row {
   max-width: 40rem;
 }
 
-.news-content img,
-.news-editor img {
+.news-image,
+.markdown img {
   float: right;
   clear: both;
 }
@@ -2019,29 +1995,30 @@ img.article-image {
 @keyframes fade-in-child {
   from {
     opacity: 0;
+    visibility: hidden;
   }
 
   to {
     opacity: 1;
+    visibility: visible;
   }
 }
 
-@keyframes show-delayed {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1
-  }
+.fading-overlay {
+  position: absolute;
+  transition: opacity .2s ease-in-out;
 }
 
-.show-delayed {
-  -webkit-animation: 0.2s ease-out 0.1s 1 show-delayed;
-  -moz-animation: 0.2s ease-out 0.1s 1 show-delayed;
-  -ms-animation: 0.2s ease-out 0.1s 1 show-delayed;
-  -o-animation: 0.2s ease-out 0.1s 1 show-delayed;
-  animation: 0.2s ease-out 0.1s 1 show-delayed;
+.overlay-invisible {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -100;
+}
+
+.overlay-visible {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10000;
 }
 
 .color-row {

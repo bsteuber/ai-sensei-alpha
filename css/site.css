@@ -288,6 +288,10 @@ They are consistent to bootstrap at 16px font size.
   color: var(--nav-footer-fg);
 }
 
+.footer-link.active {
+  color: white;
+}
+
 /* small nav on md and lg only */
 @media (min-width: 48em) and (max-width:74.9999em) {
   .my-nav {
@@ -416,31 +420,49 @@ They are consistent to bootstrap at 16px font size.
 
 /* News Page */
 
-.news-content {
+.news-content,
+.discuss-post-content {
   position: relative;
 }
 
-.news-list .news-content:not(.expanded) {
+.news-list .news-content:not(.expanded),
+.discuss .discuss-post-content:not(.expanded) {
   max-height: 25em;
   overflow-y: hidden;
 }
 
-.news-list .news-content:not(.expanded) .news-article-fade-out {
+.news-list .news-content:not(.expanded) .news-article-fade-out,
+.discuss .discuss-post-content:not(.expanded) .discuss-fade-out {
   content: '';
   position: absolute;
-  inset: 17em 0 0;
-  background: linear-gradient(to bottom, #00000000, var(--card-bg));
+  inset: 19em 0 0;
+  background: linear-gradient(to bottom, transparent, var(--card-bg) 60%);
 }
 
-.news-read-more-btn {
+.news-read-more-btn,
+.discuss-read-more-btn {
   display: none;
 }
 
-.news-list .news-content:not(.expanded) .news-read-more-btn {
+.news-list .news-content:not(.expanded) .news-read-more-btn,
+.discuss .discuss-post-content:not(.expanded) .discuss-read-more-btn {
   display: block;
   position: absolute;
   inset: 22em 0 0;
   background-color: var(--card-bg);
+}
+
+.server-side-rendered lite-youtube {
+  background-color: #aaa !important;
+  background-image: none !important;
+}
+
+.server-side-rendered lite-youtube::before {
+  background-image: none !important;
+}
+
+.server-side-rendered lite-youtube .lty-playbtn {
+  display: block;
 }
 
 /* Upload page */
