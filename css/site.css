@@ -540,3 +540,9 @@ They are consistent to bootstrap at 16px font size.
 .admin-date-str {
   width: 30ch;
 }
+
+.chart-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
