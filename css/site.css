@@ -125,15 +125,16 @@ They are consistent to bootstrap at 16px font size.
   flex: 1;
 }
 
+.fullscreen .page-layout-sidebar,
+.fullscreen .page-layout-header {
+  display: none;
+}
+
 /* md */
 @media (min-width: 48em) {
 
   .page-layout-header {
     display: none;
-  }
-
-  .page-layout-sidebar {
-    display: block;
   }
 }
 

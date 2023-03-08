@@ -1852,8 +1852,7 @@ play-ai-game-row {
   max-width: 40rem;
 }
 
-.news-image,
-.markdown img {
+.news-image {
   float: right;
   clear: both;
 }
