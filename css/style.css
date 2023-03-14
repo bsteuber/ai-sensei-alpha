@@ -2571,6 +2571,7 @@ path.check-mark {
 
 .popover {
   border-radius: 1rem;
+  border: 2px solid rgba(0, 0, 0, .3);
   filter: drop-shadow(0.3rem 0.4rem 0.15rem rgba(0, 0, 0, 0.5));
   background-color: #ffffffed;
   z-index: 99;
@@ -2583,38 +2584,50 @@ path.check-mark {
 
 .popover-arrow {
   pointer-events: none;
+  --arrow-height: 29px;
+  --arrow-left: 16px;
+  --arrow-right: 2px;
+  --offset-right: 6px;
+  --offset-vertical: -19px;
+  --border-height: calc(var(--arrow-height) + 4px);
+  --border-left: calc(var(--arrow-left) + 3px);
+  --border-right: calc(var(--arrow-right) + 1px);
+  --border-offset-right: calc(var(--offset-right) - 2px);
+  --border-offset-vertical: calc(var(--offset-vertical) - 5px);
+  --arrow-color: #f6f6f6;
+  --border-color: #00000088;
 }
 
 .bs-popover-auto[data-popper-placement^="bottom"]>.popover-arrow::after,
 .bs-popover-bottom>.popover-arrow::after {
-  right: 0.4rem;
-  top: -1.05rem;
-  border-width: 0 0.2rem 1.7rem 1rem;
-  border-bottom-color: #ffffffed;
+  right: var(--offset-right);
+  top: var(--offset-vertical);
+  border-width: 0 var(--arrow-right) var(--arrow-height) var(--arrow-left);
+  border-bottom-color: var(--arrow-color);
 }
 
 .bs-popover-auto[data-popper-placement^="bottom"]>.popover-arrow::before,
 .bs-popover-bottom>.popover-arrow::before {
-  right: 0.4rem;
-  top: calc(-1.05rem - 1px);
-  border-width: 0 0.2rem 1.7rem 1rem;
-  border-bottom-color: rgba(0, 0, 0, 0.5);
+  right: var(--border-offset-right);
+  top: var(--border-offset-vertical);
+  border-width: 0 var(--border-right) var(--border-height) var(--border-left);
+  border-bottom-color: var(--border-color);
 }
 
 .bs-popover-auto[data-popper-placement^="top"]>.popover-arrow::after,
 .bs-popover-top>.popover-arrow::after {
-  right: 0.4rem;
-  bottom: -1.05rem;
-  border-width: 1.7rem 0.2rem 0 1rem;
-  border-top-color: #ffffffed;
+  right: var(--offset-right);
+  bottom: var(--offset-vertical);
+  border-width: var(--arrow-height) var(--arrow-right) 0 var(--arrow-left);
+  border-top-color: var(--arrow-color);
 }
 
 .bs-popover-auto[data-popper-placement^="top"]>.popover-arrow::before,
 .bs-popover-top>.popover-arrow::before {
-  right: 0.4rem;
-  bottom: calc(-1.05rem - 1px);
-  border-width: 1.7rem 0.2rem 0 1rem;
-  border-top-color: rgba(0, 0, 0, 0.5);
+  right: var(--border-offset-right);
+  bottom: var(--border-offset-vertical);
+  border-width: var(--border-height) var(--border-right) 0 var(--border-left);
+  border-top-color: var(--border-color);
 }
 
 .popover-overlay {

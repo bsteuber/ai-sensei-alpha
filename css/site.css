@@ -106,6 +106,34 @@ They are consistent to bootstrap at 16px font size.
   margin: 0;
 }
 
+/* Pulse animation */
+
+@keyframes pulse {
+  0% {
+    outline-width: .1rem;
+    outline-color: var(--pulse-color);
+  }
+
+  100% {
+    outline-width: .6rem;
+    outline-color: transparent;
+  }
+}
+
+.pulse {
+  --pulse-color: #0d255f69;
+  outline-style: solid;
+  animation: pulse 1s infinite;
+}
+
+.pulse-navigation {
+  outline-offset: -.3rem;
+}
+
+.pulse-bright {
+  --pulse-color: hsla(289, 25%, 80%, 0.624);
+}
+
 /* Page layout */
 
 .page-layout {
