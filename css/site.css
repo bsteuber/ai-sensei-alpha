@@ -115,12 +115,13 @@ They are consistent to bootstrap at 16px font size.
   }
 
   100% {
-    outline-width: .6rem;
+    outline-width: var(--pulse-end-width);
     outline-color: transparent;
   }
 }
 
 .pulse {
+  --pulse-end-width: .6rem;
   --pulse-color: #0d255f69;
   outline-style: solid;
   animation: pulse 1s infinite;
@@ -132,6 +133,16 @@ They are consistent to bootstrap at 16px font size.
 
 .pulse-bright {
   --pulse-color: hsla(289, 25%, 80%, 0.624);
+}
+
+.pulse-strong {
+  --pulse-color: #0d265fde;
+  --pulse-end-width: .8rem;
+}
+
+.pulse-stronger {
+  --pulse-color: #021272;
+  --pulse-end-width: 1.1rem;
 }
 
 /* Page layout */
