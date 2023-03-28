@@ -94,12 +94,20 @@ They are consistent to bootstrap at 16px font size.
   background-size: cover;
 }
 
-.my-spinner.dark {
-  background-image: url(/img/spinner-dark.png);
+.my-spinner {
+  background-image: url(/img/spinner-dark-small.png);
 }
 
 .my-spinner.light {
-  background-image: url(/img/spinner-light.png);
+  background-image: url(/img/spinner-light-small.png);
+}
+
+.my-spinner.large {
+  background-image: url(/img/spinner-dark-large.png);
+}
+
+.my-spinner.large.light {
+  background-image: url(/img/spinner-light-large.png);
 }
 
 .button-spinner {
