@@ -210,6 +210,10 @@ They are consistent to bootstrap at 16px font size.
   padding: .3rem .8rem;
 }
 
+.server-side-rendered .main-nav-toggle {
+  visibility: hidden;
+}
+
 .main-nav-toggle:hover {
   background-color: var(--nav-hover-bg);
 }
