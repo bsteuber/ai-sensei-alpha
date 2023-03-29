@@ -2307,6 +2307,7 @@ circle.ownership.diff.white {
   display: none !important;
 }
 
+
 .with-category .move-category {
   display: block;
   fill: none;
@@ -3031,13 +3032,29 @@ comment-body h7 {
   background-color: #faa;
 }
 
-.instance-status-list .worker.worker-connected { background-color: #8e8; }
-.instance-status-list .error { background-color: #f55; }
+.instance-status-list .worker.worker-connected {
+  background-color: #8e8;
+}
 
-.instance-status-list .RUNNING { background-color: #8e8; }
-.instance-status-list .STAGING { background-color: #ee8; }
-.instance-status-list .STOPPING { background-color: #e8e; }
-.instance-status-list .TERMINATED { background-color: #e88; }
+.instance-status-list .error {
+  background-color: #f55;
+}
+
+.instance-status-list .RUNNING {
+  background-color: #8e8;
+}
+
+.instance-status-list .STAGING {
+  background-color: #ee8;
+}
+
+.instance-status-list .STOPPING {
+  background-color: #e8e;
+}
+
+.instance-status-list .TERMINATED {
+  background-color: #e88;
+}
 
 .job-queue-table span.badge,
 .instance-status-list span.badge {
