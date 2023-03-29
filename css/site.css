@@ -562,6 +562,11 @@ They are consistent to bootstrap at 16px font size.
   min-width: 5rem;
 }
 
+.ai-disabled .board-point-spinner,
+.logged-out .board-point-spinner {
+  display: none;
+}
+
 /* Training overview page */
 
 .problem-page-start-training-spinner {
