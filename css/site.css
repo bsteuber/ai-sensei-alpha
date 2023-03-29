@@ -551,7 +551,7 @@ They are consistent to bootstrap at 16px font size.
 /* Game list */
 
 .game-cell-spinner {
-  width: 40%;
+  font-size: 70px;
 }
 
 /* Board */

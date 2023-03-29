@@ -80,9 +80,9 @@
   --blunder-on-black: #cb3330;
   --blunder-on-white: #ff0500;
   --board-tooltip: #ffffffd0;
-  --plan-basic-bg: #9bbaf7;
-  --plan-dan-bg: #ddd;
-  --plan-pro-bg: #eece1f;
+  --plan-basic-bg: hsl(220, 90%, 80%);
+  --plan-dan-bg: hsl(250, 90%, 80%);
+  --plan-pro-bg: hsl(45, 90%, 70%);
 }
 
 #app.theme-dark {
@@ -2702,7 +2702,9 @@ path.check-mark {
   position: relative;
 }
 
-.badge-free {
+.badge-free,
+.plan-card-free,
+.btn-plan.free {
   background-color: white;
 }
 
