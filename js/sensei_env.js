@@ -3,6 +3,7 @@ SENSEI_ENV = {
   FIREBASE_DB: "PRODUCTION",
   SERVER_HOST: "https://us-central1-sensei-160117.cloudfunctions.net/betaServer",
   RANK_PREDICT_HOST: "https://ai-sensei.com/rank-predict",
+  HUMANLIKE_HOST: "http://35.192.78.242/predict-humanlike",
   WS_SCHEDULER_URL: "wss://ai-sensei.com/ws",
   ENABLE_FAST_LEVEL_UP: "true",
   ENABLE_WEAKER_BOTS: "true",
