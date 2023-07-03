@@ -157,8 +157,20 @@
   --tag-border: #00000080;
 }
 
-body {
-  -webkit-touch-callout: none !important;
+.noselect {
+  -webkit-touch-callout: none;
+  /* Safari Touch /
+  -webkit-user-select: none;   / Webkit /
+  -moz-user-select: none;      / Firefox /
+  -ms-user-select: none;       / Edge/
+   user-select: none;       / Future-proof*/
+}
+
+.nodrag {
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
 }
 
 hr {
