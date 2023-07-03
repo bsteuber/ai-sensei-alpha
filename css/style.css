@@ -157,6 +157,10 @@
   --tag-border: #00000080;
 }
 
+body {
+  -webkit-touch-callout: none;
+}
+
 hr {
   opacity: 0.1;
 }
