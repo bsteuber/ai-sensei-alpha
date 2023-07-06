@@ -2232,9 +2232,12 @@ input:focus+.slider {
   transform: translateX(17px);
 }
 
-
 .hover-ghost {
   opacity: 0.5;
+}
+
+.safe-click-ghost {
+  opacity: 0.8;
 }
 
 circle.circle-label.hidden {
