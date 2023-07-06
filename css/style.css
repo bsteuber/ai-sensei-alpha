@@ -1814,7 +1814,6 @@ play-ai-game-row {
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: min(80vw, 50rem);
-    margin-bottom: 10%;
   }
 }
 
@@ -1928,7 +1927,7 @@ img.article-image {
 }
 
 .modal-content {
-  max-height: 90vh;
+  max-height: 98vh;
   overflow-y: auto;
 }
 
@@ -3413,10 +3412,36 @@ input[type=range].styled-slider:hover::-ms-fill-upper {
 }
 
 .firebaseui-container {
-  max-width: 460px;
+  max-width: 40rem !important;
 }
 
 .firebaseui-idp-button,
 .firebaseui-tenant-button {
-  max-width: 260px;
+  max-width: 16rem !important;
+}
+
+.firebaseui-card-content {
+  padding: 0 !important;
+}
+
+.firebaseui-idp-text {
+  font-size: 1rem !important;
+}
+
+.firebaseui-idp-text.firebaseui-idp-text-short {
+  display: none !important;
+}
+
+.firebaseui-idp-text.firebaseui-idp-text-long {
+  display: table-cell !important;
+}
+
+@media(max-width: 20em) {
+  .firebaseui-idp-text.firebaseui-idp-text-short {
+    display: table-cell !important;
+  }
+
+  .firebaseui-idp-text.firebaseui-idp-text-long {
+    display: none !important;
+  }
 }
