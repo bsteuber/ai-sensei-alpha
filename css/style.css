@@ -2898,6 +2898,24 @@ comment-body h7 {
   fill: rgb(165, 2, 2);
 }
 
+.rank-history-chart .chart {
+  background-color: transparent;
+
+}
+
+.rank-history-chart .c3-line-rank {
+  stroke-width: 4px !important;
+}
+
+.rank-history-chart .c3-legend-item-rank {
+  display: none;
+}
+
+.rank-history-chart .c3-axis-x-label,
+.rank-history-chart .c3-axis-y-label {
+  font-size: 0.8rem;
+}
+
 .chart {
   background-color: #f6f3f0ff;
 }
