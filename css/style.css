@@ -2237,7 +2237,7 @@ input:focus+.slider {
 }
 
 .safe-click-ghost {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 circle.circle-label.hidden {
