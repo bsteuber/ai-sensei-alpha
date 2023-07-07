@@ -2907,13 +2907,13 @@ comment-body h7 {
   stroke-width: 4px !important;
 }
 
-.rank-history-chart .c3-legend-item-rank {
-  display: none;
-}
-
 .rank-history-chart .c3-axis-x-label,
 .rank-history-chart .c3-axis-y-label {
   font-size: 0.8rem;
+}
+
+.rank-history-chart .c3-axis-y .tick line {
+  display: none;
 }
 
 .chart {
