@@ -2916,6 +2916,10 @@ comment-body h7 {
   display: none;
 }
 
+.rank-history-chart .c3-circle {
+  color: black !important;
+}
+
 .chart {
   background-color: #f6f3f0ff;
 }
