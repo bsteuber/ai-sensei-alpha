@@ -579,7 +579,6 @@ They are consistent to bootstrap at 16px font size.
 .play-ai-handicap-row {
   margin-top: -0.5rem;
   font-style: italic;
-
 }
 
 /* Ranked mode page */
@@ -588,7 +587,7 @@ They are consistent to bootstrap at 16px font size.
   display: flex;
   /* background-color: rgb(31, 119, 180);
   color: white; */
-  margin-bottom: 1rem;
+
   align-items: center;
   gap: 1.5rem;
 }
@@ -597,6 +596,10 @@ They are consistent to bootstrap at 16px font size.
   color: rgb(5, 80, 133);
   font-size: 2.5rem;
   font-weight: bold;
+}
+
+.ranked-overview-players .font-large {
+  font-size: 1.3rem !important;
 }
 
 /* Admin pages */
