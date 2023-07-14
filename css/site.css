@@ -580,13 +580,13 @@ They are consistent to bootstrap at 16px font size.
 /* Ranked mode page */
 
 .play-ai-current-rank-box {
-  padding: 5px 10px;
-  background-color: hsl(208, 100%, 85%);
+  padding: 5px 15px;
+  background-color: hsl(212, 68%, 85%);
 }
 
 .play-ai-match-box {
-  padding: 15px 10px;
-  background-color: hsl(28, 100%, 75%);
+  padding: 15px 15px;
+  background-color: hsl(272, 60%, 85%);
 }
 
 .play-ai-current-rank {
