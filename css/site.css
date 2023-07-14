@@ -33,10 +33,6 @@ They are consistent to bootstrap at 16px font size.
   margin: 0 auto;
 }
 
-.flex-gap-1 {
-  gap: .25em;
-}
-
 /* Buttons */
 
 .my-btn {
@@ -583,16 +579,17 @@ They are consistent to bootstrap at 16px font size.
 
 /* Ranked mode page */
 
-.current-rank-box {
-  display: flex;
-  /* background-color: rgb(31, 119, 180);
-  color: white; */
-
-  align-items: center;
-  gap: 1.5rem;
+.play-ai-current-rank-box {
+  padding: 5px 10px;
+  background-color: hsl(208, 100%, 85%);
 }
 
-.current-rank-box .current-rank {
+.play-ai-match-box {
+  padding: 15px 10px;
+  background-color: hsl(28, 100%, 75%);
+}
+
+.play-ai-current-rank {
   color: rgb(5, 80, 133);
   font-size: 2.5rem;
   font-weight: bold;

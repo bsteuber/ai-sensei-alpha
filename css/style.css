@@ -219,6 +219,10 @@ hr {
   border-color: var(--primary);
 }
 
+.btn-primary:not(:disabled):not(.disabled):hover {
+  background-color: var(--primary-hover);
+}
+
 .btn-primary:not(:disabled):not(.disabled).active {
   background-color: var(--primary-active);
   border-color: var(--primary-active) !important;
@@ -2900,7 +2904,6 @@ comment-body h7 {
 
 .rank-history-chart .chart {
   background-color: transparent;
-
 }
 
 .rank-history-chart .c3-line-rank {
@@ -2917,7 +2920,9 @@ comment-body h7 {
 }
 
 .rank-history-chart .c3-circle {
-  color: black !important;
+  stroke: rgb(31, 119, 180) !important;
+  stroke-width: 2;
+  fill: white !important;
 }
 
 .chart {
