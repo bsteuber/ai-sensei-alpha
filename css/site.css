@@ -601,7 +601,8 @@ They are consistent to bootstrap at 16px font size.
   font-size: 1.3rem !important;
 }
 
-.play-ai-result-dialog .markdown p {
+.play-ai-result-dialog .markdown p,
+.play-ai-monetization-warning .markdown p {
   margin-bottom: 0;
 }
 
