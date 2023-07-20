@@ -5,6 +5,7 @@ SENSEI_ENV = {
   RANK_PREDICT_HOST: "https://ai-sensei.com/rank-predict",
   HUMANLIKE_HOST: "https://ai-sensei.com/predict-humanlike",
   ENABLE_HUMANLIKE_BOTS: "true",
+  ENABLE_HUMANLIKE_BOTS_JP: "true",
   WS_SCHEDULER_URL: "wss://ai-sensei.com/ws",
   ENABLE_FAST_LEVEL_UP: "true",
   ENABLE_BUNDESLIGA_STATS: "true",
