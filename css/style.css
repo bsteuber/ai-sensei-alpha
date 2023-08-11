@@ -363,6 +363,7 @@ body,
 .fullscreen #content,
 .game-page #content,
 .training-page #content,
+.game-record-page #content,
 .play-ai-game-page #content {
   padding-top: 0;
 }
