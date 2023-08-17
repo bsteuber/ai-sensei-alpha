@@ -1454,15 +1454,7 @@ img.white-black {
   padding: 0.2rem;
 }
 
-.tutorial-menu-toggle {
-  color: #8a8a8a;
-  background: transparent;
-  border: none;
-  font-size: 1.3rem;
-  margin-left: auto;
-  border-radius: 3px;
-  width: 2rem;
-  padding: 0.1rem;
+.tutorial-close-button {
   pointer-events: all;
 }
 
