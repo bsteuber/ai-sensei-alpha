@@ -597,6 +597,16 @@ They are consistent to bootstrap at 16px font size.
   font-weight: bold;
 }
 
+.play-ai-quota-remaining {
+  font-size: 1.3rem;
+}
+
+.play-ai-quota-exceeded {
+  color: rgb(179, 13, 13);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
 .ranked-overview-players .font-large {
   font-size: 1.3rem !important;
 }
