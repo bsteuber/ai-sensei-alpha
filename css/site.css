@@ -52,6 +52,23 @@ They are consistent to bootstrap at 16px font size.
   background-color: var(--color-accent-hover);
 }
 
+/* Boxes */
+
+.box-primary {
+  padding: 15px;
+  background-color: hsl(220, 100%, 88%);
+}
+
+.box-highlight {
+  padding: 15px;
+  background-color: hsl(250, 100%, 88%);
+}
+
+.box-danger {
+  padding: 15px;
+  background-color: hsl(0, 100%, 88%);
+}
+
 /* Highlight badges */
 
 [data-highlight] {
@@ -578,18 +595,6 @@ They are consistent to bootstrap at 16px font size.
 }
 
 /* Ranked mode page */
-
-.play-ai-current-rank-box {
-  padding: 15px;
-  background-color: hsl(220, 100%, 88%);
-  /* background-color: var(--plan-basic-bg); */
-}
-
-.play-ai-match-box {
-  padding: 15px;
-  background-color: hsl(250, 100%, 88%);
-  /* background-color: var(--plan-dan-bg); */
-}
 
 .play-ai-current-rank {
   color: rgb(5, 80, 133);
