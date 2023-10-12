@@ -64,6 +64,11 @@ They are consistent to bootstrap at 16px font size.
   background-color: hsl(250, 100%, 88%);
 }
 
+.box-warning {
+  padding: 15px;
+  background-color: hsl(14, 100%, 88%);
+}
+
 .box-danger {
   padding: 15px;
   background-color: hsl(0, 100%, 88%);
@@ -607,7 +612,7 @@ They are consistent to bootstrap at 16px font size.
 }
 
 .play-ai-quota-exceeded {
-  color: rgb(179, 13, 13);
+  color: hsl(14, 86%, 38%);
   font-size: 1.3rem;
   font-weight: bold;
 }
