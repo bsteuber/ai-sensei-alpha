@@ -6,6 +6,7 @@ SENSEI_ENV = {
   HUMANLIKE_HOST: "https://ai-sensei.com/predict-humanlike",
   ENABLE_HUMANLIKE_BOTS: "true",
   ENABLE_HUMANLIKE_BOTS_JP: "true",
+  ENABLE_HUMANLIKE_ANALYSIS: "true",
   USE_NEW_SCHEDULER: "true",
   WS_SCHEDULER_URL: "wss://ai-sensei.com/ws",
   NEW_SCHEDULER_URL: "wss://ai-sensei.com/ws2",

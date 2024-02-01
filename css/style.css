@@ -2377,6 +2377,11 @@ circle.ownership.diff.white {
   visibility: hidden;
 }
 
+.recommended-move .move-category {
+  fill: rgb(218, 11, 218);
+  opacity: 0.8;
+}
+
 .ai-move .move-category {
   fill: var(--ai-move);
   opacity: 0.8;
