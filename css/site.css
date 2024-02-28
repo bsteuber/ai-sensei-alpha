@@ -641,16 +641,21 @@ They are consistent to bootstrap at 16px font size.
   color: black;
 }
 
+.pricing-card-header-free {
+  background-color: hsl(0, 0%, 85%);
+  color: black;
+}
+
 .pricing-card-header-basic {
-  background-color: hsl(220, 100%, 40%);
+  background-color: hsl(208, 100%, 40%);
 }
 
 .pricing-card-header-standard {
-  background-color: hsl(250, 100%, 60%);
+  background-color: hsl(253, 100%, 60%);
 }
 
 .pricing-card-header-pro {
-  background-color: hsl(45, 100%, 35%);
+  background-color: hsl(42, 100%, 30%);
 }
 
 .pricing-card-body {
@@ -664,29 +669,51 @@ They are consistent to bootstrap at 16px font size.
 
 .pricing-plans {
   display: grid;
+  column-gap: 1rem;
+
 }
 
 @media (min-width: 48em) {
   .pricing-plans {
-    max-width: 75rem;
     grid-auto-flow: column;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1rem;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pricing-plans :nth-child(4),
+  .pricing-plans :nth-child(5),
+  .pricing-plans :nth-child(6) {
+    grid-column: 2;
   }
 }
 
-.pricing-benefit-list {
+@media (min-width: 75em) {
+  .pricing-plans {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.pricing-benefit-list ul {
   list-style: none;
   padding-left: 0;
 }
 
+.pricing-benefit-list li {
+  position: relative;
+  padding-left: 1.4em;
+  line-height: 1.3em;
+  margin-bottom: 0.5em;
+}
+
 .pricing-benefit-list li:before {
+  position: absolute;
+  left: 0;
+  top: 0;
   content: '✓';
   color: green;
   font-weight: bold;
   font-size: larger;
-  margin-right: 0.4rem;
 }
 
 /* Admin pages */
