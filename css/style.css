@@ -6,7 +6,7 @@
   --focus-opacity: 0.4;
   --primary-hover-l: calc(var(--primary-l) * var(--hover-brighten));
   --success-h: calc(var(--primary-h) - 90);
-  --success-l: calc(var(--primary-l));
+  --success-l: calc(var(--primary-l) - 5%);
   --success-hover-l: calc(var(--success-l) * var(--hover-brighten));
   --warning-h: calc(var(--primary-h) - 160);
   --warning-l: calc(var(--primary-l) + 18%);
@@ -130,7 +130,7 @@
 }
 
 #app,
-#app.theme-light {
+.theme-light {
   --page-fg: #090d17;
   --link-color: #2A3866;
   --page-bg: #eee;
@@ -2702,11 +2702,6 @@ path.check-mark {
   color: #333;
 }
 
-.badge-free,
-.btn-plan.free {
-  background-color: white;
-}
-
 .plan-card {
   border: none;
 }
@@ -2738,10 +2733,6 @@ path.check-mark {
 .plan-card-pro,
 .btn-plan.pro {
   background-color: var(--plan-pro-bg);
-}
-
-.badge-free {
-  background-color: #eee;
 }
 
 .card-option-unselected {

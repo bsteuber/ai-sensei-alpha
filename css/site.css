@@ -633,8 +633,11 @@ They are consistent to bootstrap at 16px font size.
 }
 
 .pricing-card-header {
-  color: white;
+  /* color: white; */
   border-radius: 10px 10px 0 0;
+  border-top: var(--border);
+  border-right: var(--border);
+  border-left: var(--border);
 }
 
 .badge-most-popular {
@@ -642,55 +645,76 @@ They are consistent to bootstrap at 16px font size.
 }
 
 .pricing-card-header-free {
-  background-color: hsl(0, 0%, 85%);
-  color: black;
+  background-color: hsl(0, 0%, 87%);
+  /* color: black; */
 }
 
 .pricing-card-header-basic {
-  background-color: hsl(208, 100%, 40%);
+  background-color: var(--plan-basic-bg);
 }
 
 .pricing-card-header-standard {
-  background-color: hsl(253, 100%, 60%);
+  background-color: var(--plan-dan-bg);
 }
 
 .pricing-card-header-pro {
-  background-color: hsl(42, 100%, 30%);
+  background-color: var(--plan-pro-bg);
 }
 
 .pricing-card-body {
   background-color: white;
+
+  border-right: var(--border);
+  border-left: var(--border);
 }
 
 .pricing-card-footer {
   background-color: white;
   border-radius: 0 0 10px 10px;
+  border-bottom: var(--border);
+  border-right: var(--border);
+  border-left: var(--border);
 }
 
 .pricing-plans {
+  --border: 0.5px solid rgb(206, 206, 206);
   display: grid;
   column-gap: 1rem;
-
+  max-width: 25rem;
+  justify-content: center;
 }
 
-@media (min-width: 48em) {
-  .pricing-plans {
+@media (min-width: 50em) and (max-width: 77.999em) {
+  .pricing-plans.with-free {
     grid-auto-flow: column;
     grid-template-rows: repeat(6, auto);
     grid-template-columns: 1fr 1fr;
+    max-width: 53rem;
   }
 
-  .pricing-plans :nth-child(4),
-  .pricing-plans :nth-child(5),
-  .pricing-plans :nth-child(6) {
+  .pricing-plans.with-free :nth-child(4),
+  .pricing-plans.with-free :nth-child(5),
+  .pricing-plans.with-free :nth-child(6) {
     grid-column: 2;
+  }
+
+}
+
+@media (min-width: 62em) {
+  .pricing-plans.without-free {
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 78rem;
   }
 }
 
-@media (min-width: 75em) {
-  .pricing-plans {
+@media (min-width: 78em) {
+  .pricing-plans.with-free {
+    grid-auto-flow: column;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 103rem;
   }
 }
 
