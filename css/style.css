@@ -3032,25 +3032,20 @@ comment-body h7 {
   margin: 0.8rem;
 }
 
-.job-queue-table .color-legend {
+.color-legend {
   font-size: 70%;
 }
 
-.job-queue-table .queue-high-playout-high-prio {
-  background-color: #5ff;
-}
-
-.job-queue-table .queue-high-playout-low-prio {
-  background-color: #8dd;
-}
-
-.job-queue-table .queue-low-playout-high-prio {
-  background-color: #aaf;
-}
-
-.job-queue-table .queue-low-playout-low-prio {
-  background-color: #cce;
-}
+.queue-high-playout-high-prio { background-color: #5ff; }
+.queue-high-playout-low-prio { background-color: #8dd; }
+.queue-low-playout-high-prio { background-color: #aaf; }
+.queue-low-playout-low-prio { background-color: #cce; }
+.worker-high-playout-analysis { background-color: #fa4; }
+.worker-low-playout-analysis { background-color: #d82; }
+.worker-high-playout-live { background-color: #ff5; }
+.worker-low-playout-live { background-color: #dd8; }
+.worker-disconnected { color: #888 !important; }
+.worker-error { background-color: #faa; }
 
 .job-queue-table .queue-in-progress {
   background-color: #5f5;
@@ -3058,18 +3053,6 @@ comment-body h7 {
 
 .job-queue-table .queue-failure {
   background-color: #f55;
-}
-
-.worker-status .worker-connected {
-  background-color: #8e8;
-}
-
-.worker-status .worker-error {
-  background-color: #faa;
-}
-
-.instance-status-list .worker.worker-connected {
-  background-color: #8e8;
 }
 
 .instance-status-list .error {
@@ -3093,17 +3076,13 @@ comment-body h7 {
 }
 
 .job-queue-table span.badge,
+.instances-table span.badge,
 .instance-status-list span.badge {
   display: inline-block;
   padding: 0.2em 0.3em;
   margin: 0 0.1em;
   font-size: 100%;
   color: black;
-}
-
-.instance-status-list span.worker {
-  height: 100%;
-  background-color: #e88;
 }
 
 .admin-job-queues .worker-status,
