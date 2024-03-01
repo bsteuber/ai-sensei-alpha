@@ -81,8 +81,11 @@
   --blunder-on-white: #ff0500;
   --board-tooltip: #ffffffd0;
   --plan-basic-bg: hsl(220, 90%, 80%);
+  --plan-basic-border: hsl(220, 60%, 40%);
   --plan-dan-bg: hsl(250, 90%, 80%);
+  --plan-dan-border: hsl(250, 60%, 40%);
   --plan-pro-bg: hsl(45, 90%, 70%);
+  --plan-pro-border: hsl(45, 60%, 35%);
 }
 
 #app.theme-dark {
