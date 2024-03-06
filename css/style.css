@@ -287,6 +287,28 @@ hr {
   box-shadow: 0 0 0 .2rem var(--danger-focus);
 }
 
+.alert-highlight {
+  color: hsl(37, 93%, 12%);
+  background-color: hsl(37, 90%, 90%);
+  border-color: hsl(37, 90%, 79%);
+}
+
+.alert-highlight .alert-link {
+  color: hsl(37, 100%, 26%);
+}
+
+.btn-highlight {
+  background-color: hsl(37, 90%, 40%);
+  border-color: hsl(37, 90%, 40%);
+  color: white;
+}
+
+.btn-highlight:hover {
+  background-color: hsl(22, 90%, 44%);
+  border-color: hsl(22, 90%, 44%);
+  color: white;
+}
+
 .text-primary {
   color: var(--primary) !important;
 }
@@ -3036,16 +3058,45 @@ comment-body h7 {
   font-size: 70%;
 }
 
-.queue-high-playout-high-prio { background-color: #5ff; }
-.queue-high-playout-low-prio { background-color: #8dd; }
-.queue-low-playout-high-prio { background-color: #aaf; }
-.queue-low-playout-low-prio { background-color: #cce; }
-.worker-high-playout-analysis { background-color: #fa4; }
-.worker-low-playout-analysis { background-color: #d82; }
-.worker-high-playout-live { background-color: #ff5; }
-.worker-low-playout-live { background-color: #dd8; }
-.worker-disconnected { color: #888 !important; }
-.worker-error { background-color: #faa; }
+.queue-high-playout-high-prio {
+  background-color: #5ff;
+}
+
+.queue-high-playout-low-prio {
+  background-color: #8dd;
+}
+
+.queue-low-playout-high-prio {
+  background-color: #aaf;
+}
+
+.queue-low-playout-low-prio {
+  background-color: #cce;
+}
+
+.worker-high-playout-analysis {
+  background-color: #fa4;
+}
+
+.worker-low-playout-analysis {
+  background-color: #d82;
+}
+
+.worker-high-playout-live {
+  background-color: #ff5;
+}
+
+.worker-low-playout-live {
+  background-color: #dd8;
+}
+
+.worker-disconnected {
+  color: #888 !important;
+}
+
+.worker-error {
+  background-color: #faa;
+}
 
 .job-queue-table .queue-in-progress {
   background-color: #5f5;
