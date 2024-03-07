@@ -304,8 +304,8 @@ hr {
 }
 
 .btn-highlight:hover {
-  background-color: hsl(22, 90%, 44%);
-  border-color: hsl(22, 90%, 44%);
+  background-color: hsl(37, 90%, 44%);
+  border-color: hsl(37, 90%, 44%);
   color: white;
 }
 
