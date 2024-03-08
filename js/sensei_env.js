@@ -13,5 +13,5 @@ SENSEI_ENV = {
   NEW_SCHEDULER_URL: "wss://ai-sensei.com/ws2",
   ENABLE_FAST_LEVEL_UP: "true",
   ENABLE_BUNDESLIGA_STATS: "true",
-  ENABLE_PANDANET_GAME_IMPORT: "true",
+  ENABLE_PANDANET_GAME_IMPORT: "true"
 };
