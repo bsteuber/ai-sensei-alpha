@@ -537,6 +537,16 @@ They are consistent to bootstrap at 16px font size.
 
 /* Upload page */
 
+.pandanet-import-game-card {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.pandanet-import-game-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
 .quality-overlay-wrapper {
   display: flex;
   align-items: center;
