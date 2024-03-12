@@ -592,6 +592,12 @@ They are consistent to bootstrap at 16px font size.
   min-width: 5rem;
 }
 
+
+/* .board-background.with-hints {
+  background-image: none;
+  background-color: hsl(33, 32%, 40%);
+} */
+
 .ai-disabled .board-point-spinner,
 .logged-out .board-point-spinner {
   display: none;

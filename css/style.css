@@ -2599,15 +2599,34 @@ path.check-mark {
 
 .board-check-mark {
   stroke: black;
-  fill: #0eea30;
+  fill: #05af1e;
 }
 
-.hint-square {
+/* normal board */
+/* .hint-square {
+  fill: hsl(33, 75%, 62%);
+  vector-effect: non-scaling-stroke;
+} */
+
+/* old */
+/* .hint-square {
   fill: rgba(255, 255, 255, 0.3);
   stroke: white;
   stroke-width: 3px;
   vector-effect: non-scaling-stroke;
+} */
+
+/* brighten */
+.hint-square {
+  fill: hsl(35, 69%, 80%);
+  vector-effect: non-scaling-stroke;
 }
+
+/* green */
+/* .hint-square {
+  fill: hsl(128.1, 29.3%, 55.1%);
+  vector-effect: non-scaling-stroke;
+} */
 
 .new-badge {
   font-size: 1rem;
@@ -3050,7 +3069,11 @@ comment-body h7 {
   white-space: nowrap;
 }
 
-.job-queue-table .worker-status {
+.scheduler-admin-card .css-table .thead {
+  font-size: 0.8em;
+}
+
+.analysis-queue-table .worker-status {
   margin: 0.8rem;
 }
 
@@ -3098,11 +3121,11 @@ comment-body h7 {
   background-color: #faa;
 }
 
-.job-queue-table .queue-in-progress {
+.analysis-queue-table .queue-in-progress {
   background-color: #5f5;
 }
 
-.job-queue-table .queue-failure {
+.analysis-queue-table .queue-failure {
   background-color: #f55;
 }
 
@@ -3126,7 +3149,21 @@ comment-body h7 {
   background-color: #e88;
 }
 
-.job-queue-table span.badge,
+.scheduler-admin-card {
+  background-color: #0000000a;
+  border-top: 1px solid #ffffff60;
+  border-left: 1px solid #ffffff60;
+  border-bottom: 1px solid #00000010;
+  border-right: 1px solid #00000010;
+  padding: 0.5em;
+  margin: 0.5em 0em 0.5em 0em;
+}
+
+.scheduler-admin-expander {
+  justify-content: space-between;
+}
+
+.analysis-queue-table span.badge,
 .instances-table span.badge,
 .instance-status-list span.badge {
   display: inline-block;
@@ -3176,12 +3213,12 @@ comment-body h7 {
   border: none;
 }
 
-.job-queue-table .clickable-job {
+.analysis-queue-table .clickable-job {
   cursor: pointer;
   color: var(--link-color);
 }
 
-.job-queue-table .clickable-job:hover {
+.analysis-queue-table .clickable-job:hover {
   background-color: #00000030
 }
 
