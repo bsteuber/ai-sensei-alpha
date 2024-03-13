@@ -2602,31 +2602,20 @@ path.check-mark {
   fill: #05af1e;
 }
 
-/* normal board */
-/* .hint-square {
-  fill: hsl(33, 75%, 62%);
-  vector-effect: non-scaling-stroke;
-} */
-
-/* old */
-/* .hint-square {
-  fill: rgba(255, 255, 255, 0.3);
+.hint-square {
   stroke: white;
   stroke-width: 3px;
-  vector-effect: non-scaling-stroke;
-} */
-
-/* brighten */
-.hint-square {
   fill: hsl(35, 69%, 80%);
-  vector-effect: non-scaling-stroke;
 }
 
-/* green */
-/* .hint-square {
-  fill: hsl(128.1, 29.3%, 55.1%);
-  vector-effect: non-scaling-stroke;
-} */
+
+.hint-square-borders .hint-square {
+  fill: transparent;
+}
+
+.hint-square-inners .hint-square {
+  stroke: none;
+}
 
 .new-badge {
   font-size: 1rem;
