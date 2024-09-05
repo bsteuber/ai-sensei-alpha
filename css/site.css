@@ -33,7 +33,18 @@ They are consistent to bootstrap at 16px font size.
   margin: 0 auto;
 }
 
+/* Tables */
+
+.table-xs> :not(caption)>*>* {
+  padding: 0.1rem;
+}
+
 /* Buttons */
+
+.tag-vote-button {
+  padding: 0 0.2rem;
+  margin: -5px 0;
+}
 
 .my-btn {
   background-color: var(--color-accent);
