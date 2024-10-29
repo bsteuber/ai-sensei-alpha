@@ -444,6 +444,74 @@ They are consistent to bootstrap at 16px font size.
   visibility: hidden;
 }
 
+/* Login Modal */
+
+.login-modal-content {
+  width: 30rem;
+  max-width: 90vw;
+}
+
+.login-modal-button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--login-fg-color);
+  background-color: var(--login-bg-color);
+  filter: drop-shadow(0.125rem 0.188rem 0.25rem rgba(0, 0, 0, 0.3));
+}
+
+.login-modal-button:hover {
+  color: var(--login-fg-color);
+  background-color: var(--login-hover-color);
+}
+
+.login-modal-button:focus {
+  box-shadow: none;
+}
+
+.login-modal-button:active {
+  filter: none;
+}
+
+.login-modal-button[myprovider="pandanet"] {
+  --login-fg-color: rgb(48, 47, 47);
+  --login-bg-color: hsl(0, 0%, 91%);
+  --login-hover-color: hsl(0, 0%, 85%);
+}
+
+.login-modal-button[myprovider="email"] {
+  --login-fg-color: white;
+  --login-bg-color: hsl(5, 69%, 54%);
+  --login-hover-color: hsl(5, 69%, 48%);
+}
+
+.login-modal-button[myprovider="google"] {
+  --login-fg-color: #555555;
+  --login-bg-color: hsl(0, 0%, 100%);
+  --login-hover-color: hsl(0, 0%, 90%);
+}
+
+.login-modal-button[myprovider="facebook"] {
+  --login-fg-color: white;
+  --login-bg-color: hsl(221, 44%, 41%);
+  --login-hover-color: hsl(221, 44%, 34%);
+  ;
+}
+
+.login-modal-button-icon {
+  width: 30px;
+}
+
+.login-modal-button[myprovider="google"] img {
+  width: 20px;
+  margin-bottom: 4px;
+}
+
+
+.login-modal-button img {
+  max-width: 100%;
+}
+
 /* PAGES */
 
 /* Landing Page */
