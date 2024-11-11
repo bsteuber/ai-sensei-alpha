@@ -9,9 +9,11 @@ SENSEI_ENV = {
   ENABLE_HUMANLIKE_ANALYSIS: "true",
   //USE_NEW_SCHEDULER: "true",
   //USE_NEW_PLAYOUT_COUNTS: "true",
+
   WS_SCHEDULER_URL: "wss://ai-sensei.com/ws",
   NEW_SCHEDULER_URL: "wss://ai-sensei.com/ws2",
   ENABLE_FAST_LEVEL_UP: "true",
   ENABLE_BUNDESLIGA_STATS: "true",
-  ENABLE_PANDANET_GAME_IMPORT: "true"
+  ENABLE_PANDANET_GAME_IMPORT: "true",
+  ENABLE_CHALLENGE_MODE: "true"
 };
