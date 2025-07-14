@@ -2601,6 +2601,11 @@ g.lines line {
   shape-rendering: crispEdges;
 }
 
+g.lines line.touch-delay-finished {
+  stroke: rgb(14, 104, 11);
+}
+
+
 @keyframes check-mark-keyframes {
   0% {
     opacity: 1;
