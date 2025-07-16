@@ -791,12 +791,10 @@ body,
 
 .drop-shadow {
   filter: drop-shadow(0.125rem 0.188rem 0.25rem rgba(0, 0, 0, 0.3));
-  -webkit-transform: translate3d(0, 0, 0);
 }
 
 .large-drop-shadow {
   filter: drop-shadow(0.188rem 0.25rem 0.125rem rgba(0, 0, 0, 0.3));
-  -webkit-transform: translate3d(0, 0, 0);
 }
 
 a,
@@ -2434,6 +2432,10 @@ circle.ownership.diff.white {
 .with-category .board-label.black {
   stroke: #222;
   fill: #222;
+}
+
+.with-offset {
+  transform: translate(0.25em, -0.25em);
 }
 
 .category-badge {
