@@ -162,6 +162,17 @@
   --tag-border: #00000080;
 }
 
+.svg-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.svg-icon.size-32 {
+  width: 32px;
+  height: 32px;
+}
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
