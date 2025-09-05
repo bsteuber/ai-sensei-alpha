@@ -173,6 +173,11 @@
   height: 32px;
 }
 
+.icon-cu {
+  width: 34px;
+  height: 34px;
+}
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -844,7 +849,7 @@ a.highlight {
   background-color: #ffffff40;
 }
 
-.credits {
+.icon-custom-credits {
   color: #d6c939;
 }
 
