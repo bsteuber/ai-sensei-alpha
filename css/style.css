@@ -164,8 +164,13 @@
 
 .svg-icon {
   height: 24px;
-  aspect-ratio: 6 / 5;
+  aspect-ratio: 1;
   fill: currentColor;
+}
+
+.svg-icon.svg-icon-fas-robot,
+.svg-icon.svg-icon-cu-go-board-list {
+  aspect-ratio: 6/5;
 }
 
 .svg-icon.stroke-black {
@@ -209,6 +214,35 @@
 
 .drop-icon .svg-icon.svg-icon-fa {
   height: 20px;
+}
+
+.social-media-link .svg-icon {
+  height: 16px;
+}
+
+.login-modal-button .svg-icon {
+  height: 20px;
+}
+
+.feedback-dialog .svg-icon {
+  height: 18px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+.share-dialog .svg-icon {
+  height: 18px;
+  margin: 0 0 3px;
+
+}
+
+.tag-vote-button .svg-icon {
+  height: 16px;
+  margin-bottom: 3px;
+}
+
+.next-problem-button .svg-icon {
+  height: 36px;
 }
 
 .noselect {
