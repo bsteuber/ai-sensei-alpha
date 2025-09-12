@@ -1778,12 +1778,9 @@ play-ai-game-row {
 }
 
 .controls .quiz-navigation {
-  font-size: 2.7rem !important;
+  font-size: 2.8rem !important;
 }
 
-.controls .quiz-navigation.svg-icon {
-  font-size: 2.7rem !important;
-}
 
 .controls .close-icon {
   font-size: 2.5rem !important;
