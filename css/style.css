@@ -169,9 +169,12 @@
   fill: currentColor;
 }
 
-.svg-icon.svg-icon-fas-robot,
+.svg-icon.svg-icon-fas-robot {
+  height: 1.4em;
+}
+
 .svg-icon.svg-icon-cu-go-board-list {
-  aspect-ratio: 6/5;
+  height: 1.9em;
 }
 
 .svg-icon.stroke-black {
