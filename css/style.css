@@ -163,7 +163,8 @@
 }
 
 .svg-icon {
-  height: 24px;
+  height: 1.2em;
+  vertical-align: -.175em;
   aspect-ratio: 1;
   fill: currentColor;
 }
@@ -183,7 +184,7 @@
 }
 
 .svg-icon.svg-icon-ma {
-  height: 28px;
+  height: 1.5em;
 }
 
 .svg-icon.size-20 {
@@ -192,12 +193,6 @@
 
 .svg-icon.size-32 {
   height: 32px;
-}
-
-.svg-icon.star-quality-low,
-.svg-icon.star-quality-medium,
-.svg-icon.star-quality-high {
-  height: 18px;
 }
 
 .svg-icon.star-quality-low {
@@ -212,38 +207,6 @@
   color: gold;
 }
 
-.drop-icon .svg-icon.svg-icon-fa {
-  height: 20px;
-}
-
-.social-media-link .svg-icon {
-  height: 16px;
-}
-
-.login-modal-button .svg-icon {
-  height: 20px;
-}
-
-.feedback-dialog .svg-icon {
-  height: 18px;
-  margin-right: 3px;
-  margin-bottom: 3px;
-}
-
-.share-dialog .svg-icon {
-  height: 18px;
-  margin: 0 0 3px;
-
-}
-
-.tag-vote-button .svg-icon {
-  height: 16px;
-  margin-bottom: 3px;
-}
-
-.next-problem-button .svg-icon {
-  height: 36px;
-}
 
 .noselect {
   -webkit-touch-callout: none;
@@ -1640,6 +1603,10 @@ img.white-black {
   color: #e89b28;
 }
 
+.light-drop .svg-icon.svg-icon-cu-go-board {
+  color: #484848;
+}
+
 .quiz-next-game-icon,
 .quiz-prev-game-icon {
   font-size: 1.2rem;
@@ -1810,11 +1777,15 @@ play-ai-game-row {
   color: var(--mistake-color) !important;
 }
 
-.controls i.quiz-navigation {
+.controls .quiz-navigation {
   font-size: 2.7rem !important;
 }
 
-.controls i.close-icon {
+.controls .quiz-navigation.svg-icon {
+  font-size: 2.7rem !important;
+}
+
+.controls .close-icon {
   font-size: 2.5rem !important;
 }
 
