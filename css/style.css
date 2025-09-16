@@ -1741,6 +1741,10 @@ play-ai-game-row {
   color: #ec4141;
 }
 
+.nav-control.nav-close-button .svg-icon {
+  height: 34px;
+}
+
 .svg-icon.svg-icon-cu-to-end-of-game,
 .svg-icon.svg-icon-cu-rewind-to-start {
   height: 66px;
