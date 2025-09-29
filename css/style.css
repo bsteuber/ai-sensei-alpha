@@ -1715,6 +1715,20 @@ play-ai-game-row {
   color: var(--mistake-color);
 }
 
+
+.library-button-group .btn {
+  height: 1.6lh;
+}
+
+.library-button-group select {
+  background-color: var(--nav-bg);
+  color: white;
+  border: none;
+  padding-block: 0;
+  padding-inline: 1em;
+  height: 1.6lh;
+}
+
 .bulk-add-problems-icon,
 .delete-game-problems-icon {
   margin: 0.1rem 0.5rem 0 -0.3rem;
