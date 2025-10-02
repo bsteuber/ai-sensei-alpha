@@ -601,6 +601,10 @@ They are consistent to bootstrap at 16px font size.
   background: linear-gradient(to bottom, transparent, var(--card-bg) 60%);
 }
 
+.dashboard-page .news-list .news-content:not(.expanded) .news-article-fade-out {
+  background: linear-gradient(to bottom, transparent, white 100%);
+}
+
 .news-read-more-btn,
 .discuss-read-more-btn {
   display: none;
@@ -612,6 +616,11 @@ They are consistent to bootstrap at 16px font size.
   position: absolute;
   inset: 22em 0 0;
   background-color: var(--card-bg);
+}
+
+.dashboard-page .news-content:not(.expanded) .news-read-more-btn {
+  background-color: var(--page-bg);
+  ;
 }
 
 .server-side-rendered lite-youtube {
