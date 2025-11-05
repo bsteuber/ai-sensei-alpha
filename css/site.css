@@ -620,7 +620,15 @@ They are consistent to bootstrap at 16px font size.
 
 .dashboard-page .news-content:not(.expanded) .news-read-more-btn {
   background-color: var(--page-bg);
-  ;
+}
+
+.dashboard-page .player-name,
+.dashboard-page .player-rank {
+  font-size: 1rem !important;
+}
+
+.dashboard-page .ranked-overview-info.font-larger {
+  font-size: 1rem !important;
 }
 
 .server-side-rendered lite-youtube {
