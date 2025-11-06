@@ -618,6 +618,11 @@ They are consistent to bootstrap at 16px font size.
   background-color: var(--card-bg);
 }
 
+.dashboard-widget {
+  margin: 0 1rem 2rem;
+  filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.2));
+}
+
 .dashboard-page .news-content:not(.expanded) .news-read-more-btn {
   background-color: var(--page-bg);
 }
