@@ -705,6 +705,7 @@
     "paypay-subscription-cancelled-text": "구독 취소 요청이 전송되었습니다. 요청이 완료되기까지 몇 분 걸릴 수 있습니다. 다음 결제일 전까지 멤버십은 유지됩니다. 원하신다면 개선을 위한 피드백을 보내주셔도 좋습니다. 바둑 AI를 이용해 주셔서 감사합니다!",
     "paypay-subscription-other-error-text": "구독 변경 중 문제가 발생했습니다. 잠시 후 다시 시도하거나 문제가 계속되면 지원팀에 문의해 주세요.",
     "pending-records": "대기 중인 기록",
+    "performance-report-accuracy": "정확도",
     "performance-report-early-game": "포석",
     "performance-report-end-game": "끝내기",
     "performance-report-full-game": "전체 대국",

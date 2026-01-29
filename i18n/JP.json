@@ -713,6 +713,7 @@
     "paypay-subscription-cancelled-text": "登録キャンセル申込みが送信されました。リクエストが完了するまでに数分かかる可能性が有ります。次回の支払日までは、現在の会員ステータスが保持されます。もしよろしければ、ご解約の理由や、改善点に関する要望などをいただけると幸いです。「AIの一手」をご利用いただき、ありがとうございました。",
     "paypay-subscription-other-error-text": "登録の変更中に問題が生じました。しばらく待ってからお試しいただくか、サポートにご連絡下さい。",
     "pending-records": "入力中の棋譜",
+    "performance-report-accuracy": "精度",
     "performance-report-early-game": "序盤",
     "performance-report-end-game": "終盤",
     "performance-report-full-game": "全体",
