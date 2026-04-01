@@ -1551,7 +1551,23 @@ img.white-black {
   justify-content: center;
   flex-basis: 5rem;
   height: 4rem;
+  touch-action: manipulation;
   text-decoration: none !important;
+}
+
+.nav-control,
+.nav-control * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.nav-control .svg-icon,
+.nav-control .svg-icon * {
+  pointer-events: none;
+  -webkit-user-drag: none;
 }
 
 .nav-control-inner {
